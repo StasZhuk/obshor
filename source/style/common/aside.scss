@@ -1,0 +1,28 @@
+.aside {
+    min-width: 250px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: $aside-bg;
+    font-size: 1.5rem;
+    flex: 2;
+
+    a {
+        color: $white;
+    }
+}
+
+.nav-main__list {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-main__item {
+    border-bottom: 1px solid $aside-bg-hov; 
+}
+
+.nav-main__link {
+    display: block;
+    padding: 20px;
+}

@@ -1,0 +1,127 @@
+.header {
+    display: flex;
+    padding: 2rem 0;
+    border-bottom: 1px solid rgba($black, 0.2);
+    .fa--style {
+        margin-right: 1rem;
+        font-size: 2.4rem;
+    }
+    .logo-wrap {
+        margin: 0 2rem;
+        img {
+            width: 20rem;
+        }
+    }
+
+    a {
+        transition: 0.3s color;
+        span {
+            transition: 0.3s color;
+        }
+    }
+
+    .icon-block:hover span {
+        color: $link-hov;
+    }
+}
+
+.header__right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.header__contacts {
+    display: flex;
+    @include col();
+}
+
+.icon-block {
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: center;
+        span {
+            line-height: 24px;
+            white-space: nowrap;
+        }
+}
+
+.header__contacts-link {
+    @include col-4();
+    display: flex;
+    flex-direction: column;
+    .header__skype {
+        margin-bottom: 1rem;
+    }
+
+    a {
+        color: $acsent;
+    }
+
+}
+
+.header__contacts {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.header__contacts-phone {
+    @include col-8;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .header__country-phone {
+        flex-basis: 150px;
+    }
+
+    span {
+        font-weight: bold;
+    }
+}
+
+.header__about {
+    display: flex;
+    flex-wrap: wrap;
+
+    a {
+        color: $text-grey;
+    }
+
+    a.btn {
+        color: $white;
+    }
+}
+
+.header__about-company {
+    display: flex;
+    @include col-4();
+
+
+
+    a:first-child {
+        margin-right: 10px;
+    }
+
+    .icon-block:hover {
+        color: $link-hov;
+    }
+}
+
+.header__about-call {
+    @include col-8();
+    display: flex;
+
+    .btn__wrap {
+        margin-left: auto;
+    }
+
+    .btn {
+        color: $white;
+    }
+}
+
+.about-call {
+    & > span {
+        color: $link-hov;
+    } 
+}

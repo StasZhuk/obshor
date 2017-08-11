@@ -3,10 +3,11 @@ block variables
 
 doctype html
 html(lang="ru-RU")
-  include common/_generals
+  include ./common/_generals
 
   body
-    .main__wrapper
+    include ./common/_aside
+    .main-content
       include ./common/_header
       
       //- основной контент

@@ -1,0 +1,21 @@
+.btn {
+    display: flex;
+    width: 175px;
+    background-color: $link-hov;
+    line-height: 24px;
+    padding: 5px 10px; 
+    border-radius: 3px;
+    box-shadow: 3px 0px 3px 0px darken($link-hov, 15%);
+    color: $white;
+    border-bottom: 3px solid darken($link-hov, 15%);
+    cursor: pointer;
+
+    &:hover {
+        background-color: lighten($link-hov, 5%);
+        color: $black;
+    }
+
+    span {
+        white-space: nowrap;
+    }
+}

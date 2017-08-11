@@ -12,6 +12,7 @@ html {
 }
 
 body {
+    position: relative;
     font-size: 1.6rem;
     font-family: $main-font;
     background-color: $white;
@@ -24,6 +25,13 @@ body {
     @include phone() {
         font-size: 1.3rem;
     }
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin-left: 250px;
 }
 
 *,
