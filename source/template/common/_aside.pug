@@ -15,9 +15,19 @@
     }
 
 .aside
+    .logo-wrap
+        img(src="./assets/img/main-logo.png")
     nav.nav.nav-main
         .nav-slimscroll
             ul.nav-main__list
                 each href, title in menu
                     li.nav-main__item
                         a(href= href).nav-main__link= title
+                        
+                .contacts-link
+                    a(href="#").icon-block.header__skype
+                        i(class="fa fa-skype fa--style" aria-hidden="true")
+                        span prifinance
+                    a(href="mailto:info@prifinance.com").icon-block.header__mail
+                        i(class="fa fa-envelope fa--style" aria-hidden="true" )
+                        span info@prifinance.com

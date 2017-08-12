@@ -1,51 +1,46 @@
 header.header
-    .logo-wrap
-        img(src="./assets/img/main-logo.png")
-    .header__right
+    .header__top
+        .header__company-desc
+            span Регистрация
+            span и обслуживание
+            span компаний с 1995 года
         .header__contacts
-            .header__contacts-link
-                a(href="#").icon-block.header__skype
-                    i(class="fa fa-skype fa--style" aria-hidden="true")
-                    span prifinance
-                a(href="mailto:info@prifinance.com").icon-block.header__mail
-                    i(class="fa fa-envelope fa--style" aria-hidden="true" )
-                    span info@prifinance.com
             .header__contacts-phone
                 a(href="tel:#").icon-block.header__country-phone
-                    i(class="fa fa-flag fa--style" aria-hidden="true")
+                    i(class="icon-flag flag-at fa--style" aria-hidden="true")
                     span 8 987 654 32 10
                 a(href="tel:#").icon-block.header__country-phone
-                    i(class="fa fa-flag fa--style" aria-hidden="true")
+                    i(class="icon-flag flag-ee fa--style" aria-hidden="true")
                     span 8 987 654 32 10
                 a(href="tel:#").icon-block.header__country-phone
-                    i(class="fa fa-flag fa--style" aria-hidden="true")
+                    i(class="icon-flag flag-ua fa--style" aria-hidden="true")
                     span 8 987 654 32 10
                 a(href="tel:#").icon-block.header__country-phone
-                    i(class="fa fa-flag fa--style" aria-hidden="true")
+                    i(class="icon-flag flag-en fa--style" aria-hidden="true")
                     span 8 987 654 32 10
                 a(href="tel:#").icon-block.header__country-phone
-                    i(class="fa fa-flag fa--style" aria-hidden="true")
+                    i(class="icon-flag flag-ru fa--style" aria-hidden="true")
                     span 8 987 654 32 10
                 a(href="tel:#").icon-block.header__country-phone
-                    i(class="fa fa-flag fa--style" aria-hidden="true")
+                    i(class="icon-flag flag-ru fa--style" aria-hidden="true")
                     span 8 987 654 32 10
                 
         .header__about
-            .header__about-company
-                a(href="#").icon-block
-                    i(class="fa fa-info fa--style" aria-hidden="true")
-                    span О компании
-                a(href="tel:#").icon-block
-                    i(class="fa fa-paper-plane fa--style" aria-hidden="true")
-                    span Контакты
-            .header__about-call
-                .about-call
-                    a(href="tel:#").icon-block
-                        i(class="fa fa-phone fa--style" aria-hidden="true")
-                        span Бесплатный номер: 8 854 455 45 45
-                    span.text--center Круглосуточно и без выходных
+            span.small--text Бесплатный номер 24/7
+            a(href="tel:8 800 200 99 67" class="header__about-phone") 8 800 200 99 67
+            .btn__wrap
+                a.btn
+                    span Заказать звонок
+    .header__bottom
+        .header__action-wrap
+            .action
+                h2.action__date Акция до 31 августа
+                span.action__bonus При покупке компании банковский счет в подарок
                 .btn__wrap
-                    a.btn
-                        i(class="fa fa-phone fa--style" aria-hidden="true")
-                        span Заказать звонок
-
+                    a.btn.btn--action Оставить заявку 
+        .header__video-wrap
+                video.video.video--header
+                    source(src="movie.mp4" type='video/mp4; codecs="avc1.42E01E"')
+                    source(src="movie.webm" type='video/webm; codecs="vp8, vorbis"')
+        h2.heading__second 
+            | Оффшоры – Лучшие предложения по регистрации компаний

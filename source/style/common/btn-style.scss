@@ -1,18 +1,16 @@
 .btn {
     display: flex;
-    width: 175px;
-    background-color: $link-hov;
-    line-height: 24px;
+    background-color: $btn-color;
     padding: 5px 10px; 
     border-radius: 3px;
-    box-shadow: 3px 0px 3px 0px darken($link-hov, 15%);
+    box-shadow: 3px 0px 3px 0px darken($btn-color, 15%);
     color: $white;
-    border-bottom: 3px solid darken($link-hov, 15%);
+    font-family: "robotobold", sans-serif;
+    border-bottom: 3px solid darken($btn-color, 15%);
     cursor: pointer;
 
     &:hover {
-        background-color: lighten($link-hov, 5%);
-        color: $black;
+        background-color: $btn-color-hov;
     }
 
     span {

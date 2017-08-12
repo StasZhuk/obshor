@@ -1,6 +1,8 @@
 .aside {
+    position: relative;
     min-width: 250px;
-    height: 100%;
+    width: 250px;
+    height: 100vh;
     position: fixed;
     top: 0;
     left: 0;
@@ -11,18 +13,57 @@
     a {
         color: $white;
     }
+
+    .logo-wrap {
+        position: absolute;
+        top: 0;
+        left: 0;
+        max-height: 100px;
+        max-width: 250px;
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+        img {
+            height: 80px;
+            width: auto;
+        }
+    }
+
+    .contacts-link {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+
+        span {
+            line-height: 20px;
+            font-size: 1.6rem; 
+        }
+        .header__skype {
+            margin-bottom: 1rem;
+        }
+    }
 }
 
 .nav-main__list {
     display: flex;
+    width: 100%;
     flex-direction: column;
 }
 
-.nav-main__item {
-    border-bottom: 1px solid $aside-bg-hov; 
+.nav-main__item { 
+    border-bottom: 1px solid $aside-border;
+    &:hover a {
+        background-color: $aside-bg-hov;
+    }
 }
 
 .nav-main__link {
     display: block;
-    padding: 20px;
+    padding: 10px 20px;
+    background-color: inherit;
+    transition: 0.3s background-color;
+}
+
+.nav-slimscroll {
+    margin-top: 100px;
 }

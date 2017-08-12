@@ -1,0 +1,30 @@
+-
+    var squares = {
+        "БЕЛИЗ" : "659 USD",
+        "БРИТАНСКИЕ ВИРГИНСКИЕ" : "659 USD",
+        "БРИТАНСКИЕ ВИРГИНСКИЕ ОСТРОВА" : "659 USD",
+        "ГОНКОНГ" : "659 USD",
+        "ПАНАМА" : "659 USD",
+        "КИПР" : "659 USD",
+        "ШОТЛАНДИЯ LP" : "659 USD",
+        "РАС-ЭЛЬ-ХАЙМА" : "659 USD",
+        "СИНГАПУР" : "659 USD",
+        "НОВАЯ ЗЕЛАНДИЯ" : "659 USD",
+        "СЕНТ-ВИНСЕНТ И ГРЕНАДИНЫ" : "659 USD",
+        "СЕНТ-ВИНСЕНТ" : "659 USD"
+    }
+
+section.squares
+    ul.squares__list  
+        each coast, elem in squares
+            li.squares__item
+                .squares__link
+                    span= elem
+                    .square__hov-desc
+                        .coast.coast--bg
+                            span= coast
+                        .coast__desc 
+                            span Регистрация оффшорной компании 
+                            span Юридический адрес на год 
+                            span печать
+                        a.coast__btn Получить персональное предложение

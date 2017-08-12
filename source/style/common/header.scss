@@ -1,127 +1,92 @@
 .header {
     display: flex;
-    padding: 2rem 0;
-    border-bottom: 1px solid rgba($black, 0.2);
-    .fa--style {
-        margin-right: 1rem;
-        font-size: 2.4rem;
-    }
-    .logo-wrap {
-        margin: 0 2rem;
-        img {
-            width: 20rem;
+    flex-direction: column;
+    min-height: 100vh;
+    .header__top {
+        display: flex;
+        height: 100px;
+        padding: 1rem 2rem;
+        font-size: 2rem;
+        a {
+            transition: 0.3s color;
+            span {
+                transition: 0.3s color;
+            }
         }
     }
 
-    a {
-        transition: 0.3s color;
-        span {
-            transition: 0.3s color;
-        }
-    }
 
     .icon-block:hover span {
         color: $link-hov;
     }
 }
 
-.header__right {
+.header__company-desc {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    font-size: 1.8rem;
+    margin-right: 2rem;
+    span {
+        white-space: nowrap;
+    }
 }
 
 .header__contacts {
     display: flex;
-    @include col();
 }
 
 .icon-block {
     display: flex;
     flex-wrap: nowrap;
     align-content: center;
+    font-size: 20px;    
         span {
-            line-height: 24px;
+            line-height: 20px;
             white-space: nowrap;
         }
 }
 
-.header__contacts-link {
-    @include col-4();
-    display: flex;
-    flex-direction: column;
-    .header__skype {
-        margin-bottom: 1rem;
-    }
-
-    a {
-        color: $acsent;
-    }
-
-}
-
-.header__contacts {
-    display: flex;
-    margin-bottom: 20px;
-}
-
 .header__contacts-phone {
-    @include col-8;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     .header__country-phone {
-        flex-basis: 150px;
-    }
-
-    span {
-        font-weight: bold;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include col-4();
+        flex-basis: 180px;
     }
 }
 
 .header__about {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
+    margin-left: 2rem;
 
-    a {
+    a.btn {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $white;
+        font-size: 1.6rem;
+    }
+
+    .small--text {
+        font-weight: bold;
+        font-size: 1.1rem;
+        text-align: right;
         color: $text-grey;
     }
 
-    a.btn {
-        color: $white;
+    .header__about-phone {
+        font-size: 3rem;
+        white-space: nowrap;
     }
 }
 
-.header__about-company {
-    display: flex;
-    @include col-4();
 
 
-
-    a:first-child {
-        margin-right: 10px;
-    }
-
-    .icon-block:hover {
-        color: $link-hov;
-    }
-}
-
-.header__about-call {
-    @include col-8();
-    display: flex;
-
-    .btn__wrap {
-        margin-left: auto;
-    }
-
-    .btn {
-        color: $white;
-    }
-}
-
-.about-call {
-    & > span {
-        color: $link-hov;
-    } 
-}

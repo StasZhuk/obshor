@@ -1,0 +1,86 @@
+.squares__list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+}
+
+.squares__item {
+    overflow: hidden;
+    width: 25%;
+    height: $square-size;
+    background: $aside-bg url('../img/_sec-squares/beliz.png') no-repeat center;
+    background-size: cover;
+}
+.squares__link {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    color: $white;
+
+    & > span {
+        font-family: $font-bold;
+        line-height: 24px;
+        padding: 20px;
+        text-align: center;
+        margin: auto;
+    }
+
+    &:hover {
+        .square__hov-desc {
+            transform: scale(1);  
+        }
+    }
+}
+
+.square__hov-desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    background-color: $white;
+    color: $text-color_main;
+    z-index: 1;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+    padding: 10px;
+    transform: scale(0);  
+    transition: 0.6s transform;  
+
+    .coast.coast--bg {
+        position: relative;  
+        height: 40%;
+        min-height: 70px;
+        width: 100%;
+        background: url('../img/_sec-squares/sertificats/sertificat.png') no-repeat center;
+        background-size: contain;
+        span {
+            color: $text-color-main;
+            position: absolute;
+            z-index: 2;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    
+}
+.coast__desc {
+    span {
+        font-size: 1.4rem;
+        text-align: center;
+        display: block;
+    }
+}
+.coast__btn {
+    border: 3px solid $black;
+    text-align: center;
+    padding: 10px;  
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+

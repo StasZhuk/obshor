@@ -1,5 +1,6 @@
 // fonts
 $main-font: "robotoregular", sans-serif;
+$font-bold: "robotobold", sans-serif;
 
 // text-size
 $text-size_main: 16px;
@@ -16,9 +17,23 @@ $black: #000;
 
 // bg colors
 $main-bg: blue;
-$aside-bg:#2c3e50; 
-$aside-bg-hov: #22313F; 
+
 
 // text-color
-$text-color_main: #474b57;
-$text-grey: #546372;
+$text-color_main: #1F1F1F;
+$text-size_second: 3.6rem;
+$text-grey: #A8A8B7;
+$text-action: #cf000f;
+
+// Buttons
+$btn-color: #cf000f;
+$btn-color-hov: darken($btn-color, 10%);
+
+// Aside menu
+$aside-bg: #1A1A62; 
+$aside-border: #333384;
+$aside-bg-hov: #2D2D7C; 
+
+// Square
+
+$square-size: 18vw;
