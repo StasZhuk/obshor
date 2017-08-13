@@ -62,7 +62,7 @@ a {
     color: $text-color_main;
     text-decoration: none;
 }
-
+a,
 input,
 select,
 button {
@@ -84,4 +84,8 @@ svg {
 
 section {
     position: relative;
+}
+
+.row {
+    @include row-flex();
 }

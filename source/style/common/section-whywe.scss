@@ -1,0 +1,12 @@
+.whywe {
+    display: flex;
+    height: 700px;
+    width: 100%;
+    background: $white url('../img/_sec-whywe/whywe_bg.png') no-repeat center;
+    background-size: cover;
+    padding: 50px 0;
+
+    .whywe__wrap {
+        margin: auto;
+    }
+}
