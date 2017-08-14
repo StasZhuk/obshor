@@ -5,6 +5,9 @@
     }
 
     .list__item {
+        display:flex;
+        align-items: center;
+        justify-content: center;
         flex: 1;
         text-align: center; 
         margin: 0 10px 20px; 
