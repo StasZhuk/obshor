@@ -1,0 +1,25 @@
+section.section.offer.overlay
+    .container
+        h2.heading__second.text--white 
+            | Оставьте заявку сейчас и получите персональное предложение
+        .form__wrap
+            form(id="form-offer" action="" method="post").form.offer__form
+                ul.list
+                    li.list__item
+                        input(type="mail" name="mail" placeholder="ваш e-mail" required)
+                    li.list__item
+                        input(type="tel" name="phone" placeholder="ваш номер" pattern="[0-9]*" required)
+                    li.list__item.select.select--dec
+                        select(name="service" required)
+                          option(value="Тип усуги" selected disabled) Тип услуги 
+                          option(value="service 1") service 1 
+                          option(value="service 2") service 2
+                          option(value="service 3") service 3
+                    li.list__item.select.select--dec
+                        select(name="country" required)
+                          option(value="Страна" selected disabled) Страна
+                          option(value="country 1") country 1
+                          option(value="country 2") country 2
+                          option(value="country 3") country 3
+                .btn__wrap
+                    button(type="submit").btn.btn--offer Оставить заявку

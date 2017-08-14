@@ -1,0 +1,32 @@
+-
+  var partners = {
+      '1' : './assets/img/_sec_partners/partner-1.png',
+      '2' : './assets/img/_sec_partners/partner-2.png',
+      '3' : './assets/img/_sec_partners/partner-3.png',
+      '4' : './assets/img/_sec_partners/partner-4.png',
+      '5' : './assets/img/_sec_partners/partner-5.png',
+      '6' : './assets/img/_sec_partners/partner-6.png',
+      '7' : './assets/img/_sec_partners/partner-7.png',
+      '8' : './assets/img/_sec_partners/partner-8.png',
+      '9' : './assets/img/_sec_partners/partner-9.png',
+      '10' : './assets/img/_sec_partners/partner-10.png',
+      '11' : './assets/img/_sec_partners/partner-11.png',
+      '12' : './assets/img/_sec_partners/partner-12.png',
+      '13' : './assets/img/_sec_partners/partner-13.png',
+      '14' : './assets/img/_sec_partners/partner-14.png',
+      '15' : './assets/img/_sec_partners/partner-15.png',
+      '16' : './assets/img/_sec_partners/partner-16.png',
+      '17' : './assets/img/_sec_partners/partner-17.png',
+      '18' : './assets/img/_sec_partners/partner-18.png',
+      '19' : './assets/img/_sec_partners/partner-19.png',
+      '20' : './assets/img/_sec_partners/partner-20.png'
+  }
+
+section.section.partners
+    .container
+        h2.heading__second Наши Партнеры
+        ul.list
+          each src, href in partners
+            li.list__item
+                a(href =href).list__link
+                    img(src= src)

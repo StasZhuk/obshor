@@ -13,17 +13,17 @@ module.exports = function () {
             container: {
                 maxWidth: '1200px',
                 /* max-width оn very large screen */
-                fields: '10px' /* side fields */
+                fields: '20px' /* side fields */
             },
             breakPoints: {
                 lg: {
                     'width': '1200px',
                     /* -> @media (max-width: 1100px) */
-                    'fields': '10px' /* side fields */
+                    'fields': '20px' /* side fields */
                 },
                 md: {
                     'width': '992px',
-                    'fields': '10px'
+                    'fields': '15px'
                 },
                 sm: {
                     'width': '760px',

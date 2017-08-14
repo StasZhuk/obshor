@@ -1,0 +1,27 @@
+.clients {
+    padding-bottom: 30px; 
+    .heading__second {
+        margin-bottom: 30px; 
+    }
+
+    .list__item {
+        flex: 1;
+        text-align: center; 
+        margin: 20px 10px; 
+    }
+
+    img {
+        min-width: 150px;
+        height: auto;
+    }
+    .list__link {
+        display: block;
+        border: 1px solid transparent;
+        transition: 0.3s border;
+        padding: 20px 0;
+
+        &:hover {
+            border-color: rgba($black, 0.4);
+        }
+    }
+}

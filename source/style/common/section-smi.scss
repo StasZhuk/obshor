@@ -1,0 +1,31 @@
+.smi {
+    background: $white url('../img/_sections_bg/smi_bg.png') no-repeat center top;
+    height: 351px;
+
+    .heading__second {
+        margin-bottom: 50px; 
+    }
+
+    .list {
+        align-items: center;
+    }
+
+    .list__item {
+        flex: 1;
+        text-align: center;  
+    }
+
+    img {
+        width: 130px;
+        height: auto;
+    }
+    .list__link {
+        display: block;
+        border: 1px solid transparent;
+        transition: 0.3s border;
+
+        &:hover {
+            border-color: rgba($black, 0.4);
+        }
+    }
+}

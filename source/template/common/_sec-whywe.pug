@@ -1,4 +1,19 @@
-section.whywe
-    .whywe__wrap
+-
+  var icons = {
+      'Полная конфиденциальность' : 'unlock-alt',
+      'Вникаем в деятельность клиента' : 'briefcase',
+      'Не храним документы клиента' : 'eye-slash',
+      'Работаем 24 часа и без выходных' : 'refresh',
+      'Оплата любым способом, включая Биткойны' : 'btc'
+  }
+
+section.whywe.overlay
+    .container
         h2.heading__second.text--white Почему выбирают нас
-        ul
+        ul.list
+          each name, text in icons
+            li.list__item
+                .icon__wrap
+                    i(class=`fa fa-${name}` aria-hidden="true")
+                span.whywe__item-desc= text
+            

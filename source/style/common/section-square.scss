@@ -4,16 +4,6 @@
     flex-wrap: wrap;
     width: 100%;
     height: auto;
-
-    &:before {
-        content: '';
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        background-color: rgba($aside-bg-hov, 0.4);   
-    }
 }
 
 .squares__item {

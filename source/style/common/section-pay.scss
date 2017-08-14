@@ -1,0 +1,33 @@
+.pay {
+    padding-bottom: 0;
+
+    .heading__second {
+        margin-bottom: 50px;
+    }
+
+    .list__item {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-basis: 70px;
+        max-width: 90px;
+        margin-bottom: 30px;
+    }
+    .list__link {
+        display: block;
+    }
+}
+
+.regions {
+    background: $white url('../img/_sections_bg/regions_bg.png') no-repeat center;
+    background-size: contain;
+
+    .container {
+        max-width: 700px;
+    }
+
+    .wrap__desc {
+        line-height: 24px;
+    }
+}

@@ -1,0 +1,45 @@
+.whatwedo {
+    background: $white url('../img/_sections_bg/whatwedo_bg.png') no-repeat center;
+    background-size: cover;
+    padding-top: 100px;
+    .container {
+        max-width: 700px;
+    }
+
+    .heading__wrap {
+        position: relative;
+    }
+
+    .heading__second {
+        margin-bottom: 10px;
+        span {
+            display: block;
+            line-height: 46px
+        }
+    }
+    .heading__desc {
+        font-size: 1.8rem;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .list__item {
+        display: flex;
+        align-items: center;
+        @include col-6();
+        margin-bottom: 40px;
+    }
+
+    .fa--style {
+        font-size: 3.3rem;
+        margin-top: 5px;
+    }
+
+    .wrap__desc {
+        display: flex;
+
+        span {
+            margin: auto;
+        }
+    }
+}

@@ -48,6 +48,10 @@
     display: flex;
     width: 100%;
     flex-direction: column;
+
+    li:first-child {
+        border-top: 1px solid $aside-border;
+    }
 }
 
 .nav-main__item { 

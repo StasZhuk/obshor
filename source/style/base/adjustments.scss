@@ -69,6 +69,16 @@ button {
     outline: none;
 }
 
+input,
+select {
+    width: 100%;
+    padding: 5px 10px;
+}
+
+select {
+    color: $placeholder-color;
+}
+
 textarea {
     resize: none;
 }
@@ -86,6 +96,47 @@ section {
     position: relative;
 }
 
+.section {
+    padding: 50px 0;
+
+    &.section--white {
+        color: $white;
+    }
+}
+
 .row {
     @include row-flex();
+}
+
+.container {
+    position: relative;
+    max-width: 940px;
+    width: 100%;
+    margin: auto;
+    padding: 0 20px; 
+}
+
+.overlay {
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba($aside-bg-hov, 0.4); 
+    }
+}
+
+.wrap__desc {
+    line-height: 24px;
+    p {
+        margin-bottom: 30px;
+        span {
+            display: block;
+        }
+    }
+    p:last-child {
+        margin-bottom: 0;
+    }
 }

@@ -6,6 +6,9 @@
     box-shadow: 3px 0px 3px 0px darken($btn-color, 15%);
     color: $white;
     font-family: "robotobold", sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    border: 3px solid transparent;
     border-bottom: 3px solid darken($btn-color, 15%);
     cursor: pointer;
 

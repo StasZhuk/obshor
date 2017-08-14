@@ -1,0 +1,17 @@
+-
+  var smi = {
+      '1' : './assets/img/_sec_smi/smi-1.png',
+      '2' : './assets/img/_sec_smi/smi-2.png',
+      '3' : './assets/img/_sec_smi/smi-3.png',
+      '4' : './assets/img/_sec_smi/smi-4.png',
+      '5' : './assets/img/_sec_smi/smi-5.png'
+  }
+
+section.section.smi
+    .container
+        h2.heading__second Сми о нас
+        ul.list
+          each src, href in smi
+            li.list__item
+                a(href =href).list__link
+                    img(src= src)

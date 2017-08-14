@@ -1,5 +1,11 @@
 .heading__second {
+    color: $text-color-main;
     text-align: center;
     font-size: $text-size_second;
     font-family: $main-font; 
+    margin-bottom: 50px;
+
+    &.text--white {
+        color: $white;
+    }
 }

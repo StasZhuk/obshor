@@ -1,0 +1,19 @@
+.select {
+    position: relative;
+}
+
+.select--dec {
+    &::after {
+        content: '\25bc';
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        height: 100%;
+        width: 35px;
+        line-height: 31px;
+        text-align: center;
+        background-color: $aside-border;
+        pointer-events: none;
+    }
+}
+
