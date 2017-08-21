@@ -17,5 +17,7 @@
         width: 100%;
     }
 
-
+    &.overlay::before {
+        background-color: rgba($black, 0.2);
+    }
 }

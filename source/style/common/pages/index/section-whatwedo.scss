@@ -1,7 +1,8 @@
 .whatwedo {
-    background: $white url('../img/_sections_bg/whatwedo_bg.png') no-repeat center;
-    background-size: cover;
+    background: $white url('../img/_sections_bg/whatwedo_bg.png') no-repeat center;    
     padding-top: 100px;
+    background-size: cover;
+
     .container {
         max-width: 700px;
     }
@@ -41,5 +42,9 @@
         span {
             margin: auto;
         }
+    }
+
+    &.overlay::before {
+        background-color: rgba($aside-bg-hov, 0.6);
     }
 }

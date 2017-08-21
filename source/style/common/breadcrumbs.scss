@@ -1,0 +1,26 @@
+.breadcrumbs {
+
+    li {
+        display: inline-block;
+    } 
+    li:last-child a::after {
+        display: none;
+    }
+    a,
+    span {
+        display: flex;
+        align-items: center;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+    a::after {
+        content: '';
+        width: 5px;
+        height: 5px;
+        display: inline-block;
+        background-color: #000;
+        border-radius: 50%;
+        margin: 0 10px;
+    }
+}

@@ -1,0 +1,54 @@
+.webest {
+    background: url('../img/_sections_bg/webest_bg.png') no-repeat center;
+    background-size: cover;
+    text-align: center;
+    .wrapper {
+        max-width: 700px;
+        width: 100%;
+        margin: 0 auto; 
+    }
+
+    .heading__second {
+        margin-bottom: 25px;
+    }
+
+    .text__descr {
+        margin-bottom: 35px;
+    }
+
+    .list {
+        margin-bottom: 35px;
+    }
+
+    .list__item {
+        flex: 1;
+        flex-basis: 100px;
+        text-align: center;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .icon__wrap {
+        display: flex;
+        width: 81px;
+        height: 81px;
+        margin: auto;
+        border: 3px solid $white;
+        border-radius: 50%;
+        margin-bottom: 20px;
+    }
+
+    .fa {
+        margin: auto;
+        font-size: 4.8rem;
+        color: white;
+      
+    } 
+    .item-desc {
+        font-size: 1.8rem;
+    }
+
+    &.overlay::before {
+        background-color: rgba($aside-bg-hov, 0.6);
+    }
+}

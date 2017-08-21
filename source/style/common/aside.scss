@@ -1,5 +1,6 @@
 .aside {
     position: relative;
+    z-index: 100;
     min-width: 250px;
     width: 250px;
     height: 100vh;
@@ -9,6 +10,22 @@
     background-color: $aside-bg;
     font-size: 1.5rem;
     flex: 2;
+    @include desktop() {
+        width: 100%;
+        height: 70px;
+    }
+
+    .nav {
+        display: block;
+        @include desktop() {
+            display: none;
+            position: absolute;
+            z-index: 10;
+            top: 70px;
+            left: 0;
+            background-color: $aside-bg;
+        }
+    }
 
     a {
         color: $white;
@@ -26,6 +43,10 @@
         img {
             height: 80px;
             width: auto;
+        }
+
+        @include desktop() {
+            display: none;
         }
     }
 
@@ -70,4 +91,139 @@
 
 .nav-slimscroll {
     margin-top: 100px;
+
+    @include desktop() {
+        margin-top: 0;
+    }
 }
+
+// Trigger button
+@keyframes navBtnOpenTop {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+    }
+
+    50% {
+        transform: translateY(15px) rotate(0deg);
+    }
+
+    100% {
+        transform: translateY(15px) rotate(45deg);
+    }
+}
+@keyframes navBtnCloseTop {
+    0% {
+        transform: translateY(15px) rotate(45deg);
+    }
+
+    50% {
+        transform: translateY(15px) rotate(0deg);
+    }
+
+    100% {
+        transform: translateY(0px) rotate(0deg);
+        
+    }
+}
+
+@keyframes navBtnOpenBottom {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+    }
+
+    50% {
+        transform: translateY(-15px) rotate(0deg);
+    }
+
+    100% {
+        transform: translateY(-15px) rotate(-45deg);
+    }
+}
+@keyframes navBtnCloseBottom {
+    0% {
+        transform: translateY(-15px) rotate(-45deg);        
+    }
+
+    50% {
+        transform: translateY(-15px) rotate(0deg);
+    }
+
+    100% {
+        transform: translateY(0px) rotate(0deg);
+        }
+}
+@keyframes navBtnOpenMiddle {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(0);
+    }
+}
+@keyframes navBtnCloseMiddle {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+
+.nav__trigger {
+    position: absolute;
+    z-index: 101;
+    display: none;
+    width: 40px;
+    top: 17px;
+    left: 20px;
+
+    @include desktop() {
+        display: block;
+    }
+
+    span {
+        display: block;
+        width: 100%;
+        height: 5px;
+        margin-bottom: 10px;
+        background-color: #fff;
+        border-radius: 10px;
+        transform-origin: center;
+
+    }
+
+    span:first-child {
+        animation: navBtnCloseTop 0.5s ease-in-out forwards;
+    }
+    span:nth-child(2) {
+        animation: navBtnCloseMiddle 0.5s ease-in-out forwards;
+    }
+
+    span:last-child {
+        margin-bottom: 0;
+        animation: navBtnCloseBottom 0.5s ease-in-out forwards;
+    }
+}
+
+.nav__trigger.active {
+    span:first-child {
+        animation: navBtnOpenTop  0.5s ease-in-out forwards;
+    }
+    span:nth-child(2) {
+        animation: navBtnOpenMiddle 0.5s ease-in-out forwards;
+    }
+
+    span:last-child {
+        margin-bottom: 0;
+        animation: navBtnOpenBottom 0.5s ease-in-out forwards;
+    }
+}
+
+.nav__trigger.no-animation span {
+    animation: none !important;
+}
+

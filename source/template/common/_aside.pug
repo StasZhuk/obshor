@@ -1,7 +1,7 @@
 -
     var menu = {
-        "Главная" : "#",
-        "Офшорные компании" : "#",
+        "Главная" : "/index.html",
+        "Офшорные компании" : "/pages/company-ofshor.html",
         "Европейские компании" : "#",
         "Азиатские компании" : "#",
         "Компании в США" : "#",
@@ -15,8 +15,12 @@
     }
 
 .aside
+    a.nav__trigger.no-animation(href="#")
+        span
+        span
+        span
     .logo-wrap
-        img(src="./assets/img/main-logo.png")
+        img(src="/assets/img/main-logo.png")
     nav.nav.nav-main
         .nav-slimscroll
             ul.nav-main__list

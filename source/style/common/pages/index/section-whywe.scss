@@ -1,10 +1,9 @@
 .whywe {
     position: relative;
-    display: flex;
     width: 100%;
     background: $white url('../img/_sec-whywe/whywe_bg.png') no-repeat center;
     background-size: cover;
-    padding: 135px 0 160px;
+    padding: 130px 0 130px;
     color: $white;
 
     .heading__second {
@@ -35,7 +34,7 @@
         color: white;
       
     } 
-    .whywe__item-desc {
+    .item-desc {
         font-size: 1.8rem;
     }
 }

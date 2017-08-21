@@ -1,0 +1,17 @@
+.catalog__table-wrap {
+    display: table;
+    width: 100%;
+    border-top: 1px solid grey;
+    margin-top: 20px;
+}
+
+.table__row {
+    display: table-row;
+}
+
+.table__head {
+    display: table-cell;
+    padding: 20px 10px;
+    text-align: center;
+    font-weight: bold;
+}

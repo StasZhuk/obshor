@@ -1,0 +1,27 @@
+extends ../_template
+ 
+block variables
+    - var title= 'Офшорные компании'
+
+block content
+    section.section.company-obshor
+        .container
+            h2.heading__second.text--left Регистрация оффшорных компаний
+            ul.breadcrumbs 
+                li.breadcrumbs__item
+                    a(href="/index.html").breadcrumbs__link Главная
+                li.breadcrumbs__item
+                    span.breadcrumbs__link Оффшорные компании
+            .catalog__table-wrap
+                .catalog__table
+                    .table__row.table__header
+                        .table__head Юрисдикция
+                        .table__head Стоимость регистрации
+                        .table__head Апостилированный пакет
+                            span.tooltip(data-tooltip="Апостилированный пакет – заверение апостилем пакета документов, необходимых для регистрации в иностранном государстве.") ?
+                        .table__head Номинальный сервис
+                            span.tooltip(data-tooltip="Номинальный сервис – услуги номинального директора или акционеров офшорной компании для сохранения конфиденциальности реального владельца.") ?
+                        .table__head Ежегодное продление
+                        .table__head Отчетность
+                            span.tooltip(data-tooltip="Отчетность – годовой отчет и аудит по результатам деятельности.") ?
+            

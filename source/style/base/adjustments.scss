@@ -32,6 +32,10 @@ body {
     flex-direction: column;
     min-height: 100vh;
     margin-left: 250px;
+
+    @include desktop() {
+        margin-left: 0;
+    }
 }
 
 *,
@@ -116,6 +120,10 @@ section {
     padding: 0 20px; 
 }
 
+.container-grid {
+    @include wrapper();
+}
+
 .overlay {
     &::before {
         content: '';
@@ -139,4 +147,8 @@ section {
     p:last-child {
         margin-bottom: 0;
     }
+}
+
+p {
+    line-height: 24px;
 }

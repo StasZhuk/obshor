@@ -1,4 +1,5 @@
 .list {
+    position: relative;
     @include row-flex();
     justify-content: center;
 

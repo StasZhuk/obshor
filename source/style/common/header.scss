@@ -1,7 +1,10 @@
 .header {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+
+    @include desktop() {
+        margin-top: 70px;
+    }
     .header__top {
         display: flex;
         height: 100px;
