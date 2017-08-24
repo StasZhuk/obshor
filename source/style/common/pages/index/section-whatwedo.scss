@@ -3,6 +3,17 @@
     padding-top: 100px;
     background-size: cover;
 
+    @include phone() {
+        .list__item {
+            @include col-12();
+            margin-bottom: 30px;
+        }
+
+        .heading__desc {
+            margin-bottom: 30px;
+        }
+    }
+
     .container {
         max-width: 700px;
     }

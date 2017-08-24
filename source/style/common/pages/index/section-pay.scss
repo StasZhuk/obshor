@@ -1,6 +1,15 @@
 .pay {
     padding-bottom: 0;
 
+    
+    @include phone() {
+        padding-bottom: 0;
+
+        .heading__second {
+            margin-bottom: 30px;
+        }
+    }
+
     .heading__second {
         margin-bottom: 50px;
     }
@@ -22,6 +31,10 @@
 .regions {
     background: $white url('../img/_sections_bg/regions_bg.png') no-repeat center;
     background-size: contain;
+
+    @include phone() {
+        background-size: cover;
+    }
 
     .container {
         max-width: 700px;

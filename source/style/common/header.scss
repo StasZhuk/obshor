@@ -16,6 +16,10 @@
                 transition: 0.3s color;
             }
         }
+        @include phone() {
+            flex-direction: column;
+            height: auto;
+        }
     }
 
 
@@ -32,6 +36,9 @@
     margin-right: 2rem;
     span {
         white-space: nowrap;
+    }
+    @include laptop() {
+        display: none;
     }
 }
 
@@ -70,6 +77,10 @@
     flex-wrap: wrap;
     flex-direction: column;
     margin-left: 2rem;
+    @include phone() {
+        margin-left: 0;
+        text-align: center;
+    }
 
     a.btn {
         width: 100%;
@@ -85,6 +96,11 @@
         font-size: 1.1rem;
         text-align: right;
         color: $text-grey;
+        @include phone() {
+            font-size: 1.3rem;
+            text-align: center;
+            margin: 5px auto;
+        }
     }
 
     .header__about-phone {

@@ -25,6 +25,9 @@
             left: 0;
             background-color: $aside-bg;
         }
+        @include phone() {
+            width: 100%;
+        }
     }
 
     a {

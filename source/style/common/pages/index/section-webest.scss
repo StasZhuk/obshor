@@ -2,6 +2,21 @@
     background: url('../img/_sections_bg/webest_bg.png') no-repeat center;
     background-size: cover;
     text-align: center;
+
+    @include laptop() {
+        .list__item {
+            margin-bottom: 20px;
+        }
+    }
+    @include phone() {
+        .list__item {
+            margin-bottom: 20px;
+        }
+
+        p {
+            text-align: center;
+        }
+    }
     .wrapper {
         max-width: 700px;
         width: 100%;

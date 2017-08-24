@@ -3,6 +3,24 @@
     background-size: cover;
     padding: 130px 0;
 
+    
+    @include phone() {
+        .heading__second {
+            margin-left: 0;
+            margin-right: 0;
+            margin-bottom: 20px;
+        }
+        .btn__wrap {
+            width: 200px;
+            margin: 0 auto;
+        }
+
+        .btn--offer {
+            margin: 0 auto;
+            // width: 100%;
+        }
+    }
+
     .heading__second {
         margin: 0 50px;
         margin-bottom: 50px;

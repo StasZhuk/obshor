@@ -8,4 +8,9 @@
     &.text--white {
         color: $white;
     }
+
+    @include phone() {
+        font-size: $text-size_sec-phone;
+        margin-bottom: 30px;
+    }
 }

@@ -9,9 +9,30 @@
 .squares__item {
     overflow: hidden;
     width: 25%;
-    height: $square-size;
+    height: $square-size-4;
     background: $aside-bg url('../img/_sec-squares/beliz.png') no-repeat center;
     background-size: cover;
+
+    @include xl() {
+        width: 33.33333%;
+        height: $square-size-3;
+    }
+    @include desktop() {
+        height: $square-size-dt;
+    }
+    @include laptop() {
+        width: 50%;
+        height: $square-size-lp;
+    }
+    @include phone() {
+        width: 100%;
+        height: 70vh;
+
+        // &:active,
+        // &:focus {
+        //     height: 70vh;
+        // }
+    }
 }
 .squares__link {
     position: relative;
@@ -28,13 +49,27 @@
         margin: auto;
     }
 
+
     &:hover {
         .square__hov-desc {
             opacity: 1;
             transform: scale(1);  
-            // .coast__desc {
-            //     opacity: 1;
-            // }
+        }
+    }
+
+    @include phone() {
+        &:hover {
+            .square__hov-desc {
+                opacity: 0;
+                transform: none;  
+            }
+        }
+        &:active,
+        &:focus {
+            .square__hov-desc {
+                opacity: 1;
+                transform: scale(1);  
+            }
         }
     }
 }

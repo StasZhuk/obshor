@@ -2,6 +2,19 @@
     background: $white url('../img/_sections_bg/smi_bg.png') no-repeat center top;
     height: 351px;
 
+    
+    @include desktop() {
+        background-size: contain;
+        background-position: center;;
+        height: initial;
+    }
+
+    @include laptop() {
+        .heading__second {
+            margin-bottom: 30px; 
+        }    
+    }
+
     .heading__second {
         margin-bottom: 50px; 
     }

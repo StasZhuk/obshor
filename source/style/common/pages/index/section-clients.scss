@@ -1,5 +1,19 @@
 .clients {
     padding-bottom: 30px; 
+
+    
+    @include phone() {
+        padding: 0;
+
+        .heading__second {
+            margin-bottom: 0px; 
+        }
+
+        .list__item {
+            margin: 0;
+        }
+    }
+
     .heading__second {
         margin-bottom: 30px; 
     }

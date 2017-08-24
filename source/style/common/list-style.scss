@@ -2,8 +2,32 @@
     position: relative;
     @include row-flex();
     justify-content: center;
-
 }
+
 .list__item {
     @include col();
+    @include phone() {
+        .icon__wrap {
+            width: 60px;
+            height: 60px;
+            margin-bottom: 10px;
+        }
+
+        .fa {
+            font-size: 3rem
+        }
+        .item-desc {
+            font-size: 1.3rem
+        }
+    }
+    @include laptop() {
+        .item-desc {
+            font-size: 1.4rem
+        }
+    }
+    @include desktop() {
+        .item-desc {
+            font-size: 1.5rem
+        }
+    }
 }

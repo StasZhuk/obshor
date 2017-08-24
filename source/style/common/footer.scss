@@ -3,6 +3,10 @@
     padding: 50px 0 50px;
     color: $white;
 
+    @include phone() {
+        text-align: center;
+    }
+
     .copyright {
         text-align: center;
         margin-bottom: 35px;

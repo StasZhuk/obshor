@@ -1,5 +1,15 @@
 .partners {
     padding-bottom: 70px; 
+
+    @include phone() {
+        .list__item {
+            margin: 0 10px;
+        }
+        .list__link {
+            padding: 10px 0;
+        }
+    }
+
     .heading__second {
         margin-bottom: 30px; 
     }
