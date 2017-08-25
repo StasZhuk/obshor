@@ -1,0 +1,31 @@
+.slick-slide {
+    outline: none;
+}
+.slider {
+    position: relative;
+}
+
+.slider__wrap {
+    position: relative;
+}
+.slider-arrow {
+    z-index: 10;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    .icon {
+        fill: indianred;
+        width: 40px;
+        height: 40px;
+    }
+}
+
+.slider-arrow__prev {
+    transform-origin: center;
+    transform: translateY(-50%) rotate(180deg);
+}
+.slider-arrow__next {
+    right: 20px;
+}
+

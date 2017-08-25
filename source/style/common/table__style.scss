@@ -1,0 +1,36 @@
+.table {
+    display: table;
+    margin: 0 auto;
+}
+
+.table__row {
+    display: table-row;
+
+    &:last-child {
+        .table__ceil {
+            border-bottom: none;
+        }
+    }
+}
+.table__ceil {
+    display: table-cell;
+    border-bottom: 1px solid black;
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+
+}
+.table__heading {
+    width: 180px;
+    font-weight: bold;
+}
+
+.table__heading-name {
+    font-family: 'robotobold', sans-serif;
+    color: $aside-border;
+    font-size: 1.8rem;
+    line-height: 22px;
+}
+.table__heading-desc {
+    width: 120px;
+}

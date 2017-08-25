@@ -12,16 +12,153 @@ block content
                     a(href="/index.html").breadcrumbs__link Главная
                 li.breadcrumbs__item
                     span.breadcrumbs__link Оффшорные компании
-            .catalog__table-wrap
-                .catalog__table
-                    .table__row.table__header
-                        .table__head Юрисдикция
-                        .table__head Стоимость регистрации
-                        .table__head Апостилированный пакет
-                            span.tooltip(data-tooltip="Апостилированный пакет – заверение апостилем пакета документов, необходимых для регистрации в иностранном государстве.") ?
-                        .table__head Номинальный сервис
-                            span.tooltip(data-tooltip="Номинальный сервис – услуги номинального директора или акционеров офшорной компании для сохранения конфиденциальности реального владельца.") ?
-                        .table__head Ежегодное продление
-                        .table__head Отчетность
-                            span.tooltip(data-tooltip="Отчетность – годовой отчет и аудит по результатам деятельности.") ?
-            
+            .slider__wrap.slider-obshor__wrap
+                .slider-arrow.slider-arrow__next
+                    +icon('slider-arrow')
+                .slider-arrow.slider-arrow__prev
+                    +icon('slider-arrow')
+                div(data-slick='{"slidesToShow": 2, "slidesToScroll": 1}').slider.company-obshor__slider
+                    div
+                        .table__wrap
+                            div.table.table__obshor
+                                .table__row
+                                    .table__ceil.table__heading Юрисдикция
+                                    .table__ceil.table__heading-desc.table__heading-name Оффшор Сейшелы
+                                .table__row
+                                    .table__ceil.table__heading Стоимость регистрации
+                                    .table__ceil.table__heading-desc 349 USD
+                                .table__row 
+                                    .table__ceil.table__heading Апостилированный пакет
+                                        .tooltip(data-tooltip="Апостилированный пакет – заверение апостилем пакета документов, необходимых для регистрации в иностранном государстве.") ?
+                                    .table__ceil.table__heading-desc 370 USD
+                                .table__row 
+                                    .table__ceil.table__heading Номинальный сервис
+                                        .tooltip(data-tooltip="Номинальный сервис – услуги номинального директора или акционеров офшорной компании для сохранения конфиденциальности реального владельца.") ?
+                                    .table__ceil.table__heading-desc 450 USD
+                                .table__row 
+                                    .table__ceil.table__heading Ежегодное продление
+                                    .table__ceil.table__heading-desc 280 USD
+                                .table__row
+                                    .table__ceil.table__heading Отчетность
+                                        .tooltip(data-tooltip="Отчетность – годовой отчет и аудит по результатам деятельности.") ?
+                                    .table__ceil.table__heading-desc X
+                    div
+                        .table__wrap
+                            div.table.table__obshor
+                                .table__row
+                                    .table__ceil.table__heading Юрисдикция
+                                    .table__ceil.table__heading-desc.table__heading-name Оффшор Сейшелы
+                                .table__row
+                                    .table__ceil.table__heading Стоимость регистрации
+                                    .table__ceil.table__heading-desc 349 USD
+                                .table__row 
+                                    .table__ceil.table__heading Апостилированный пакет
+                                        .tooltip(data-tooltip="Апостилированный пакет – заверение апостилем пакета документов, необходимых для регистрации в иностранном государстве.") ?
+                                    .table__ceil.table__heading-desc 370 USD
+                                .table__row 
+                                    .table__ceil.table__heading Номинальный сервис
+                                        .tooltip(data-tooltip="Номинальный сервис – услуги номинального директора или акционеров офшорной компании для сохранения конфиденциальности реального владельца.") ?
+                                    .table__ceil.table__heading-desc 450 USD
+                                .table__row 
+                                    .table__ceil.table__heading Ежегодное продление
+                                    .table__ceil.table__heading-desc 280 USD
+                                .table__row
+                                    .table__ceil.table__heading Отчетность
+                                        .tooltip(data-tooltip="Отчетность – годовой отчет и аудит по результатам деятельности.") ?
+                                    .table__ceil.table__heading-desc X
+                    div
+                        .table__wrap
+                            div.table.table__obshor
+                                .table__row
+                                    .table__ceil.table__heading Юрисдикция
+                                    .table__ceil.table__heading-desc.table__heading-name Оффшор Сейшелы
+                                .table__row
+                                    .table__ceil.table__heading Стоимость регистрации
+                                    .table__ceil.table__heading-desc 349 USD
+                                .table__row 
+                                    .table__ceil.table__heading Апостилированный пакет
+                                        .tooltip(data-tooltip="Апостилированный пакет – заверение апостилем пакета документов, необходимых для регистрации в иностранном государстве.") ?
+                                    .table__ceil.table__heading-desc 370 USD
+                                .table__row 
+                                    .table__ceil.table__heading Номинальный сервис
+                                        .tooltip(data-tooltip="Номинальный сервис – услуги номинального директора или акционеров офшорной компании для сохранения конфиденциальности реального владельца.") ?
+                                    .table__ceil.table__heading-desc 450 USD
+                                .table__row 
+                                    .table__ceil.table__heading Ежегодное продление
+                                    .table__ceil.table__heading-desc 280 USD
+                                .table__row
+                                    .table__ceil.table__heading Отчетность
+                                        .tooltip(data-tooltip="Отчетность – годовой отчет и аудит по результатам деятельности.") ?
+                                    .table__ceil.table__heading-desc X
+                    div
+                        .table__wrap
+                            div.table.table__obshor
+                                .table__row
+                                    .table__ceil.table__heading Юрисдикция
+                                    .table__ceil.table__heading-desc.table__heading-name Оффшор Сейшелы
+                                .table__row
+                                    .table__ceil.table__heading Стоимость регистрации
+                                    .table__ceil.table__heading-desc 349 USD
+                                .table__row 
+                                    .table__ceil.table__heading Апостилированный пакет
+                                        .tooltip(data-tooltip="Апостилированный пакет – заверение апостилем пакета документов, необходимых для регистрации в иностранном государстве.") ?
+                                    .table__ceil.table__heading-desc 370 USD
+                                .table__row 
+                                    .table__ceil.table__heading Номинальный сервис
+                                        .tooltip(data-tooltip="Номинальный сервис – услуги номинального директора или акционеров офшорной компании для сохранения конфиденциальности реального владельца.") ?
+                                    .table__ceil.table__heading-desc 450 USD
+                                .table__row 
+                                    .table__ceil.table__heading Ежегодное продление
+                                    .table__ceil.table__heading-desc 280 USD
+                                .table__row
+                                    .table__ceil.table__heading Отчетность
+                                        .tooltip(data-tooltip="Отчетность – годовой отчет и аудит по результатам деятельности.") ?
+                                    .table__ceil.table__heading-desc X
+                    div
+                        .table__wrap
+                            div.table.table__obshor
+                                .table__row
+                                    .table__ceil.table__heading Юрисдикция
+                                    .table__ceil.table__heading-desc.table__heading-name Оффшор Сейшелы
+                                .table__row
+                                    .table__ceil.table__heading Стоимость регистрации
+                                    .table__ceil.table__heading-desc 349 USD
+                                .table__row 
+                                    .table__ceil.table__heading Апостилированный пакет
+                                        .tooltip(data-tooltip="Апостилированный пакет – заверение апостилем пакета документов, необходимых для регистрации в иностранном государстве.") ?
+                                    .table__ceil.table__heading-desc 370 USD
+                                .table__row 
+                                    .table__ceil.table__heading Номинальный сервис
+                                        .tooltip(data-tooltip="Номинальный сервис – услуги номинального директора или акционеров офшорной компании для сохранения конфиденциальности реального владельца.") ?
+                                    .table__ceil.table__heading-desc 450 USD
+                                .table__row 
+                                    .table__ceil.table__heading Ежегодное продление
+                                    .table__ceil.table__heading-desc 280 USD
+                                .table__row
+                                    .table__ceil.table__heading Отчетность
+                                        .tooltip(data-tooltip="Отчетность – годовой отчет и аудит по результатам деятельности.") ?
+                                    .table__ceil.table__heading-desc X
+                    div
+                        .table__wrap
+                            div.table.table__obshor
+                                .table__row
+                                    .table__ceil.table__heading Юрисдикция
+                                    .table__ceil.table__heading-desc.table__heading-name Оффшор Сейшелы
+                                .table__row
+                                    .table__ceil.table__heading Стоимость регистрации
+                                    .table__ceil.table__heading-desc 349 USD
+                                .table__row 
+                                    .table__ceil.table__heading Апостилированный пакет
+                                        .tooltip(data-tooltip="Апостилированный пакет – заверение апостилем пакета документов, необходимых для регистрации в иностранном государстве.") ?
+                                    .table__ceil.table__heading-desc 370 USD
+                                .table__row 
+                                    .table__ceil.table__heading Номинальный сервис
+                                        .tooltip(data-tooltip="Номинальный сервис – услуги номинального директора или акционеров офшорной компании для сохранения конфиденциальности реального владельца.") ?
+                                    .table__ceil.table__heading-desc 450 USD
+                                .table__row 
+                                    .table__ceil.table__heading Ежегодное продление
+                                    .table__ceil.table__heading-desc 280 USD
+                                .table__row
+                                    .table__ceil.table__heading Отчетность
+                                        .tooltip(data-tooltip="Отчетность – годовой отчет и аудит по результатам деятельности.") ?
+                                    .table__ceil.table__heading-desc X

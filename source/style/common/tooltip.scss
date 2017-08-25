@@ -7,43 +7,35 @@
     margin-top: 5px;
     border-radius: 50%;
     background-color: $acsent;
-    line-height: 18px;
+    line-height: 16px;
     border: 1px solid black; 
-    cursor: help;
+    text-align: center;
+	cursor: help;
 }
 
-.tooltip::after,
-.tooltip::before {
+
+.tooltip::after {
     position: absolute;
-    left: 50%;
-    opacity: 0;
-    transition: 0.3s all;
-}
-
-.tooltip::before {
-    content: '';
-    border-width: 10px 8px 0 8px;
-    border-style: solid;
-    border-color: rgba($aside-border, 0.9) transparent transparent transparent;
-    margin-left: -8px;
-    top: -20px;
+    z-index: 100;
+    left: 100%;
 }
 
 .tooltip::after {
-    content: attr(data-tooltip);
-    background-color: rgba($aside-border, 0.9);
-    top: -20px;
-    width: 200px;
-    margin-left: -100px;
-    border-radius: 5px;
-    font-size: 13px;
-    padding: 10px;
-    color: #fff;
-    font-weight: normal;
-    transform: translateY(-100%);
+    bottom: 0;
+    margin-bottom: 8px;
+    margin-left: 5px;
+	background:  rgba($aside-border, 0.9);
+	border-radius: 8px 8px 8px 0px;
+	box-shadow: 1px 1px 10px rgba($acsent, 0.5);
+	color: #FFF;
+	content: attr(data-tooltip);
+	opacity: 0;
+	padding: 8px;
+	visibility: hidden;	
+	transition: all 0.4s ease-in-out;
 }
-
-.tooltip:hover::after,
-.tooltip:hover::before {
-    opacity: 1;
+		
+.tooltip:hover::after {
+	opacity: 1;
+	visibility: visible;
 }

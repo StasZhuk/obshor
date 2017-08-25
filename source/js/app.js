@@ -17,14 +17,10 @@ $(document).ready(function () {
         gallery: {
             enabled: true
         }
-        // other options
     });
 
 
-    //   nav trigger
-    // $('.nav__trigger').on('click', function() {
-    //     $('.nav-main').trigger('click');
-    // });
+    // Menu NAV adaptive
     $(".nav__trigger").click(function() {
         if ($(".nav__trigger").hasClass('active')) {
                 $(".nav__trigger").removeClass('active');
@@ -47,4 +43,43 @@ $(document).ready(function () {
         }
         return false;
     });
+
+
+//  SQUARE MOBILE CLICK
+
+    (function() {
+            $('.squares__link').on('click', function(e) {
+                e.preventDefault();
+
+                var $this = $(this),
+                    item = $this.closest('.squares__item'),
+                    list = $this.closest('.squares__list'),
+                    items = list.find('.squares__item');
+
+                if($(window).width() <= 480) {
+                    if(!item.hasClass('active')) {
+                        items.removeClass('active');
+                        item.addClass('active');
+                    }
+                    else {
+                        item.removeClass('active');
+                    }
+                }
+            });
+    })();
+
+    // SLICK CAROUSEL OBSOR COMPANY PAGE
+    (function() {
+
+        $('.company-obshor__slider').slick({
+            // dots: true,
+            // customPaging : function() {
+            //     return '<a class="index-slider__dots"></a>';
+            // },
+            prevArrow: '.slider-arrow__prev',
+            nextArrow: '.slider-arrow__next'
+        });
+        
+    })(); 
+
 });
