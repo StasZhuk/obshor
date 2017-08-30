@@ -1,16 +1,17 @@
 .btn {
     display: flex;
-    background-color: $btn-color;
-    padding: 5px 10px; 
+    background-color: darken($acsent-pink, 20%);
+    padding: 10px; 
     border-radius: 3px;
-    box-shadow: 3px 0px 3px 0px darken($btn-color, 15%);
+    box-shadow: 0px 0px 3px 0px darken($btn-color, 15%);
     color: $white;
     font-family: "robotobold", sans-serif;
-    font-size: 2rem;
+    font-size: 1.6rem;
     text-align: center;
-    border: 3px solid transparent;
-    border-bottom: 3px solid darken($btn-color, 15%);
+    border: 1px solid transparent;
     cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.3s color, 0.3s background-color;
 
     &:hover {
         background-color: $btn-color-hov;
@@ -19,4 +20,31 @@
     span {
         white-space: nowrap;
     }
+}
+
+.btn__info {
+    display: inline-block;
+    width: 150px;
+    padding: 14px 10px 15px;
+    background-color: $aside-bg;
+    box-shadow: 0px 0px 3px 0px darken($aside-bg, 15%);
+
+    &:hover {
+        background-color: darken($aside-bg, 10%);
+    }
+}
+
+.coast__btn {
+    transition: 0.3s all;
+    &:hover {
+        color: $white;
+        background-color: $acsent-pink;
+        border-color: transparent;
+    }
+}
+
+.btn-popup-order {
+    display: block;
+    width: 250px;
+    margin: 0 auto;
 }

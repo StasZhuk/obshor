@@ -7,7 +7,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    background-color: $aside-bg;
+    background-color: rgba($aside-bg, 1);
     font-size: 1.5rem;
     flex: 2;
     @include desktop() {
@@ -87,7 +87,7 @@
 
 .nav-main__link {
     display: block;
-    padding: 10px 20px;
+    padding: 20px 20px;
     background-color: inherit;
     transition: 0.3s background-color;
 }

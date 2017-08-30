@@ -1,0 +1,32 @@
+.section-stages {
+    li:nth-child(odd) {
+        span {
+            order: 1;
+        }
+    }
+}
+
+.stages__item {
+    display: flex;
+    max-width: 16%;
+    margin: 0;
+    width: 100%;
+    flex-direction: column;
+    // align-content: center;s
+    text-align: center;
+}
+
+.stages__icon {
+    height: 120px;
+    font-size: 6rem;
+    padding: 10px;
+    line-height: 90px;
+}
+
+.stages__item-desc {
+    height: 120px;
+    background-color: $aside-bg;
+    padding: 40px 10px;
+    color: $white;
+    text-transform: uppercase;
+}

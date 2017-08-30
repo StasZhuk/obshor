@@ -1,17 +1,13 @@
 -
     var menu = {
         "Главная" : "/index.html",
-        "Офшорные компании" : "/pages/company-ofshor.html",
-        "Европейские компании" : "#",
-        "Азиатские компании" : "#",
-        "Компании в США" : "#",
+        "Офшорные компании" : "/pages/company-offshor.html",
+        "Европейские компании" : "/pages/company-europa.html",
+        "Азиатские компании" : "/pages/company-asia.html",
+        "Компании в США" : "/pages/company-usa.html",
         "Банковские счета" : "#",
         "ВНЖ" : "#",
-        "Фонды и трасты" : "#",
-        "Получение лицензии" : "#",
-        "Регистрация яхт и судов" : "#",
-        "Регистрация  и судов" : "#",
-        "Регист яхт и судов" : "#"
+        "Получение лицензии" : "#"
     }
 
 .aside
@@ -29,9 +25,6 @@
                         a(href= href).nav-main__link= title
                         
                 .contacts-link
-                    //- a(href="#").icon-block.header__skype
-                    //-     i(class="fa fa-skype fa--style" aria-hidden="true")
-                    //-     span prifinance
                     a(href="mailto:info@prifinance.com").icon-block.header__mail
                         i(class="fa fa-envelope fa--style" aria-hidden="true" )
                         span info@cks35.ru

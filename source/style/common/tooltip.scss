@@ -21,18 +21,24 @@
 }
 
 .tooltip::after {
+    width: 300px;
     bottom: 0;
     margin-bottom: 8px;
     margin-left: 5px;
-	background:  rgba($aside-border, 0.9);
+	background:  rgba($aside-bg, 0.9);
 	border-radius: 8px 8px 8px 0px;
-	box-shadow: 1px 1px 10px rgba($acsent, 0.5);
+	box-shadow: 1px 1px 10px rgba($aside-bg, 0.5);
 	color: #FFF;
 	content: attr(data-tooltip);
 	opacity: 0;
 	padding: 8px;
 	visibility: hidden;	
-	transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    font-weight: normal;
+    font-size: 1.4rem;
+    @include phone() {
+        width: 150px;
+    }
 }
 		
 .tooltip:hover::after {

@@ -1,0 +1,154 @@
+-
+    var europComp = {
+        'item1' : {
+            'place' : 'Швеция',
+            'coastReg' : '130 000',
+            'hrefMore' : '#'
+        },
+        'item2' : {
+            'place' : 'Словения',
+            'coastReg' : '182 000',
+            'hrefMore' : '#'
+        },
+        'item3' : {
+            'place' : 'Венгрия',
+            'coastReg' : '126 000',
+            'hrefMore' : '#'
+        },
+        'item4' : {
+            'place' : 'Лихтенштейн',
+            'coastReg' : '1 050 000',
+            'hrefMore' : '#'
+        },
+        'item5' : {
+            'place' : 'Польша',
+            'coastReg' : '170 000',
+            'hrefMore' : '#'
+        },
+        'item6' : {
+            'place' : 'Чехия',
+            'coastReg' : '189 000',
+            'hrefMore' : '#'
+        },
+        'item7' : {
+            'place' : 'Испания',
+            'coastReg' : '266 000',
+            'hrefMore' : '#'
+        },
+        'item8' : {
+            'place' : 'Нидерланды',
+            'coastReg' : '196 000',
+            'hrefMore' : '#'
+        },
+        'item9' : {
+            'place' : 'Молдова',
+            'coastReg' : '133 000',
+            'hrefMore' : '#'
+        },
+        'item10' : {
+            'place' : 'Словакия',
+            'coastReg' : '59 000',
+            'hrefMore' : '#'
+        },
+        'item11' : {
+            'place' : 'Эстония',
+            'coastReg' : '35 000',
+            'hrefMore' : '#'
+        },
+        'item12' : {
+            'place' : 'Австрия',
+            'coastReg' : '294 000',
+            'hrefMore' : '#'
+        },
+        'item13' : {
+            'place' : 'Дания K/S',
+            'coastReg' : '399 000',
+            'hrefMore' : '#'
+        },
+        'item14' : {
+            'place' : 'Дания Aps',
+            'coastReg' : '399 000',
+            'hrefMore' : '#'
+        },
+        'item15' : {
+            'place' : 'Греция',
+            'coastReg' : '392 000',
+            'hrefMore' : '#'
+        },
+        'item16' : {
+            'place' : 'Ирландия LTD',
+            'coastReg' : '94 500',
+            'hrefMore' : '#'
+        },
+        'item17' : {
+            'place' : 'Италия',
+            'coastReg' : '455 000',
+            'hrefMore' : '#'
+        },
+        'item18' : {
+            'place' : 'Латвия',
+            'coastReg' : '49 000',
+            'hrefMore' : '#'
+        },
+        'item19' : {
+            'place' : 'Литва',
+            'coastReg' : '76 300',
+            'hrefMore' : '#'
+        },
+        'item20' : {
+            'place' : 'Люксембург',
+            'coastReg' : '980 000',
+            'hrefMore' : '#'
+        },
+        'item21' : {
+            'place' : 'Швейцария',
+            'coastReg' : '692 000',
+            'hrefMore' : '#'
+        },
+        'item22' : {
+            'place' : 'Финляндия',
+            'coastReg' : '147 000',
+            'hrefMore' : '#'
+        },
+        'item23' : {
+            'place' : 'Германия(GMBH)',
+            'coastReg' : '245 000',
+            'hrefMore' : '#'
+        },
+        'item24' : {
+            'place' : 'Норвегия',
+            'coastReg' : '265 000',
+            'hrefMore' : '#'
+        },
+        'item25' : {
+            'place' : 'Румыния',
+            'coastReg' : '141 000',
+            'hrefMore' : '#'
+        },
+        'item26' : {
+            'place' : 'Болгария',
+            'coastReg' : '84 000',
+            'hrefMore' : '#'
+        },
+        'item27' : {
+            'place' : 'Турция',
+            'coastReg' : '300 000',
+            'hrefMore' : '#'
+        }
+    }
+
+each object in europComp
+    div(data-thumb= object.place)
+        .table__wrap
+            div.table.table__obshor
+                .table__row
+                    .table__ceil.table__heading Юрисдикция
+                    .table__ceil.table__heading-desc.table__heading-name=  object.place
+                .table__row
+                    .table__ceil.table__heading Стоимость регистрации
+                    .table__ceil.table__heading-desc= 'От ' + object.coastReg  + ' руб'
+                
+            .btn__wrap
+                .a(href= object.hrefMore).btn.btn__info Подробнее
+            .btn__wrap
+                .a(href="#popup-order").btn.btn-popup-order Получить персональное предожение

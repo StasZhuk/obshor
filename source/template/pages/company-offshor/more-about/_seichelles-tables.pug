@@ -1,0 +1,183 @@
+-
+    var seichelles = {
+        'bronze' : {
+            'name' : 'Бронза',
+            'regComp' : 'v',
+            'yrAddres' : 'v',
+            'sertif' : 'v',
+            'regAgent' : 'v',
+            'printCompany' : 'v',
+            'apostDoc' : 'X',
+            'nominalDir' : 'X',
+            'nominalAcs' : 'X',
+            'generalPerson' : 'X',
+            'bank' : 'X',
+            'openPersonal' : 'X',
+            'readyAnswer' : 'X',
+            'coastAll' : '16 500',
+            'coastDiscount' : '16 500',
+            'coastYear' : '16 500'
+        },
+        'silver' : {
+            'name' : 'Серебро',
+            'regComp' : 'v',
+            'yrAddres' : 'v',
+            'sertif' : 'v',
+            'regAgent' : 'v',
+            'printCompany' : 'v',
+            'apostDoc' : 'v',
+            'nominalDir' : 'X',
+            'nominalAcs' : 'X',
+            'generalPerson' : 'X',
+            'bank' : 'X',
+            'openPersonal' : 'X',
+            'readyAnswer' : 'X',
+            'coastAll' : '33 500',
+            'coastDiscount' : '27 500',
+            'coastYear' : '25 000'
+        },
+        'gold' : {
+            'name' : 'Золото',
+            'regComp' : 'v',
+            'yrAddres' : 'v',
+            'sertif' : 'v',
+            'regAgent' : 'v',
+            'printCompany' : 'v',
+            'apostDoc' : 'v',
+            'nominalDir' : 'v',
+            'nominalAcs' : 'v',
+            'generalPerson' : 'X',
+            'bank' : 'X',
+            'openPersonal' : 'X',
+            'readyAnswer' : 'X',
+            'coastAll' : '45 500',
+            'coastDiscount' : '39 500',
+            'coastYear' : '42 500'
+        }
+    }
+
+each object in seichelles
+    div(data-thumb= object.name)
+        .table__wrap.table__small-ceill
+            div.table.table__obshor.table__package
+                .table__caption= 'Пакет ' + object.name
+                .table__row
+                    .table__ceil.table__heading Регистрация компании, включая оплату госпошлин
+                        .tooltip(data-tooltip="Подготовка полного пакета документов в зависимости от выбранной формы собственности, сотрудничество с соответствующими инстанциями Сейшельских о-вов до получения регистрационных документов.") ?
+                    if (object.regCom == "X")
+                        .table__ceil.table__heading-desc
+                            i(class=`fa fa-remove` aria-hidden="true").text--no
+                    else
+                        .table__ceil.table__heading-desc
+                            i(class=`fa fa-check` aria-hidden="true").text--ok
+                .table__row
+                    .table__ceil.table__heading Юридический адрес
+                        .tooltip(data-tooltip="Мы предоставляем юридический адрес для вашей компании на Сейшельских островах, избавляя от необходимости приобретать или арендовать недвижимость.") ?
+                    if (object.yrAddres == "X")
+                        .table__ceil.table__heading-desc
+                            i(class=`fa fa-remove` aria-hidden="true").text--no
+                    else
+                        .table__ceil.table__heading-desc
+                            i(class=`fa fa-check` aria-hidden="true").text--ok
+                .table__row
+                    .table__ceil.table__heading Сертификат акций
+                        .tooltip(data-tooltip="Получение сертификата, подтверждающего владение акциями компании на Сейшельских островах, с указанием их количества, класса, серийных номеров.") ?
+                    if (object.sertif == "X")
+                        .table__ceil.table__heading-desc
+                            i(class=`fa fa-remove` aria-hidden="true").text--no
+                    else
+                        .table__ceil.table__heading-desc
+                            i(class=`fa fa-check` aria-hidden="true").text--ok
+                .table__row
+                    .table__ceil.table__heading Зарегистрированный агент
+                        .tooltip(data-tooltip="Указанное в свидетельстве о регистрации и представляющее компанию лицо (физическое или юридическое), через которое осуществляется связь с властями и инстанциями Сейшельских островов.") ?
+                    if (object.regAgent == "X")
+                        .table__ceil.table__heading-desc
+                            i(class=`fa fa-remove` aria-hidden="true").text--no
+                    else
+                        .table__ceil.table__heading-desc
+                            i(class=`fa fa-check` aria-hidden="true").text--ok
+                .table__row
+                    .table__ceil.table__heading Печать компании
+                        .tooltip(data-tooltip="Оформление печати компании и регистрация ее в соответствии с законами Сейшельских островов.") ?
+                    if (object.printCompany == "X")
+                        .table__ceil.table__heading-desc
+                            i(class=`fa fa-remove` aria-hidden="true").text--no
+                    else
+                        .table__ceil.table__heading-desc
+                            i(class=`fa fa-check` aria-hidden="true").text--ok
+                .table__row
+                    .table__ceil.table__heading Апостилирование документов
+                        .tooltip(data-tooltip="Проставление на документах апостиля в уполномоченных органах Сейшельских островов. Консультации о необходимости аполистирования.") ?
+                    if (object.apostDoc == "X")
+                        .table__ceil.table__heading-desc
+                            i(class=`fa fa-remove` aria-hidden="true").text--no
+                    else
+                        .table__ceil.table__heading-desc
+                            i(class=`fa fa-check` aria-hidden="true").text--ok
+                .table__row
+                    .table__ceil.table__heading Номинальный директор
+                        .tooltip(data-tooltip="Чтобы сохранить инкогнито владельца компании на Сейшельских островах, для проведения сделок между фирмами одного собственника или решения других задач удобным решением станет услуга номинального директора. Он имеет ограниченные полномочия и действует согласно решениям фактического владельца.") ?
+                    if (object.nominalDir == "X")
+                        .table__ceil.table__heading-desc
+                            i(class=`fa fa-remove` aria-hidden="true").text--no
+                    else
+                        .table__ceil.table__heading-desc
+                            i(class=`fa fa-check` aria-hidden="true").text--ok
+                .table__row
+                    .table__ceil.table__heading Номинальный акционер
+                        .tooltip(data-tooltip="Если нет возможности или необходимости привлекать реальных акционеров, мы предоставим услугу номинального акционера для регистрации и деятельности соответствующей компании на Сейшельских островах.") ?
+                    if (object.nominalAcs == "X")
+                        .table__ceil.table__heading-desc
+                            i(class=`fa fa-remove` aria-hidden="true").text--no
+                    else
+                        .table__ceil.table__heading-desc
+                            i(class=`fa fa-check` aria-hidden="true").text--ok
+                .table__row
+                    .table__ceil.table__heading Выпуск генеральной доверенности на одно лицо (The Power of Attorney)
+                        .tooltip(data-tooltip="Оформление генеральной доверенности для проведения деятельности на территории Сейшельских островов с различными полномочиями и сроками действия, а также консультация по их определению.") ?
+                    if (object.generalPerson == "X")
+                        .table__ceil.table__heading-desc
+                            i(class=`fa fa-remove` aria-hidden="true").text--no
+                    else
+                        .table__ceil.table__heading-desc
+                            i(class=`fa fa-check` aria-hidden="true").text--ok
+                .table__row
+                    .table__ceil.table__heading Счет в банке Rietumu
+                        .tooltip(data-tooltip="Подготовка необходимого пакета документов и открытие корпоративного счета компании в отделении банка Rietumu.") ?
+                    if (object.bank == "X")
+                        .table__ceil.table__heading-desc
+                            i(class=`fa fa-remove` aria-hidden="true").text--no
+                    else
+                        .table__ceil.table__heading-desc
+                            i(class=`fa fa-check` aria-hidden="true").text--ok
+                .table__row
+                    .table__ceil.table__heading Открытие личного счета
+                        .tooltip(data-tooltip="Подготовка необходимого пакета документов и открытие личного счета в банке на Сейшельских островах из рекомендованного списка или на ваш выбор.") ?
+                    if (object.openPersonal == "X")
+                        .table__ceil.table__heading-desc
+                            i(class=`fa fa-remove` aria-hidden="true").text--no
+                    else
+                        .table__ceil.table__heading-desc
+                            i(class=`fa fa-check` aria-hidden="true").text--ok
+                .table__row
+                    .table__ceil.table__heading Готовое ООО со 100% участием Сейшельской компании
+                        .tooltip(data-tooltip="Мы предоставляем уже зарегистрированную на Сейшельских островах компанию в форме ООО, полностью готовую к осуществлению деятельности, в создании которой на 100% участвует местное юридическое лицо.") ?
+                    if (object.readyAnswer == "X")
+                        .table__ceil.table__heading-desc
+                            i(class=`fa fa-remove` aria-hidden="true").text--no
+                    else
+                        .table__ceil.table__heading-desc
+                            i(class=`fa fa-check` aria-hidden="true").text--ok
+                .table__row
+                    .table__ceil.table__heading Общая стоимость
+                    .table__ceil.table__heading-desc= object.coastAll + ' руб'
+                .table__row
+                    .table__ceil.table__heading Цена со скидкой
+                    .table__ceil.table__heading-desc= object.coastDiscount + ' руб'
+                .table__row
+                    .table__ceil.table__heading Ежегодное обслуживание
+                    .table__ceil.table__heading-desc= object.coastYear + ' руб'
+                        
+            .btn__wrap
+                a(href="#popup-order").btn.btn-popup-order Получить персональное предожение

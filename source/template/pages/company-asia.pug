@@ -1,0 +1,24 @@
+extends ../_template
+ 
+block variables
+    - var title= 'Азиатские компании'
+
+block content
+    section.section.company
+        .container
+            h2.heading__second.text--left Регистрация Азиатских компаний
+            ul.breadcrumbs 
+                li.breadcrumbs__item
+                    a(href="/index.html").breadcrumbs__link Главная
+                li.breadcrumbs__item
+                    span.breadcrumbs__link Азиатские компании
+            .slider__pagination
+            .slider__wrap.slider-obshor__wrap
+                .slider-arrow.slider-arrow__next
+                    +icon('slider-arrow')
+                .slider-arrow.slider-arrow__prev
+                    +icon('slider-arrow')
+                div(data-slick='{"slidesToShow": 1, "slidesToScroll": 1}').slider.company-obshor__slider
+                    include ./company-asia/_asia-tables
+            
+            include ../common/_popupform

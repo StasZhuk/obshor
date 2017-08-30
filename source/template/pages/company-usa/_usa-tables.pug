@@ -1,0 +1,39 @@
+-
+    var usaComp = {
+        'item1' : {
+            'place' : 'Калифорния',
+            'coastReg' : '91 000',
+            'hrefMore' : '#'
+        },
+        'item2' : {
+            'place' : 'Невада',
+            'coastReg' : '154 000',
+            'hrefMore' : '#'
+        },
+        'item3' : {
+            'place' : 'Вайоминг',
+            'coastReg' : '5 600',
+            'hrefMore' : '#'
+        },
+        'item4' : {
+            'place' : 'Делавер',
+            'coastReg' : '1 050 000',
+            'hrefMore' : '#'
+        }
+    }
+
+each object in usaComp
+    div(data-thumb= object.place)
+        .table__wrap
+            div.table.table__obshor
+                .table__row
+                    .table__ceil.table__heading Юрисдикция
+                    .table__ceil.table__heading-desc.table__heading-name=  object.place
+                .table__row
+                    .table__ceil.table__heading Стоимость регистрации
+                    .table__ceil.table__heading-desc= 'От ' + object.coastReg  + ' руб'
+                
+            .btn__wrap
+                .a(href= object.hrefMore).btn.btn__info Подробнее
+            .btn__wrap
+                .a(href="#popup-order").btn.btn-popup-order Получить персональное предожение

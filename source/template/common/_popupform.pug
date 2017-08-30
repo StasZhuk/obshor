@@ -1,0 +1,13 @@
+form#popup-order.mfp-hide.form.popup-form-specials(method="post" action="")
+    h3.form__heading
+    .wrap__input.col
+        input(type="tel" placeholder="Контактный телефон*" required) 
+        i(class="fa fa-phone-square" aria-hidden="true")
+    .wrap__input
+        input(type="email" placeholder="Ваш e-mail*" required) 
+        i(class="fa fa-envelope-o" aria-hidden="true")
+    .wrap__input
+        textarea(placeholder="Ваш вопрос*" rows="7" required)
+        i(class="fa pencil" aria-hidden="true")
+    .wrap__input.wrap__input-submit
+        input.btn(type="submit" value="Отправить заявку") 

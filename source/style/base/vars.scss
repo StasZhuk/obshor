@@ -19,6 +19,7 @@ $black: #000;
 // bg colors
 $main-bg: blue;
 $footer-bg: #22222B;
+$section-text: lighten(#C1C1C1, 15%);
 
 
 // text-color
@@ -27,6 +28,7 @@ $text-size_second: 3.6rem;
 $text-size_sec-phone: 2.4rem;
 $text-grey: #A8A8B7;
 $text-action: #cf000f;
+$text-link: #CD5C5C;
 
 // Buttons
 $btn-color: #cf000f;
@@ -37,9 +39,9 @@ $btn-color-hov: darken($btn-color, 10%);
 $placeholder-color: #757575;
 
 // Aside menu
-$aside-bg: #1A1A62; 
-$aside-border: #333384;
-$aside-bg-hov: #2D2D7C; 
+$aside-bg: #333384; 
+$aside-border: darken($aside-bg, 10%);
+$aside-bg-hov: darken($aside-bg, 15%); 
 
 // Square
 

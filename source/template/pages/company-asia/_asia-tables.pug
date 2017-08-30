@@ -1,0 +1,80 @@
+-
+    var asiaComp = {
+        'item1' : {
+            'place' : 'Япония',
+            'coastReg' : '544 100',
+            'apPack' : 'не требуется',
+            'nominalServ' : 'не требуется',
+            'yearCoast' : '289 000',
+            'answer' : 'V',
+            'hrefMore' : '#'
+        },
+        'item2' : {
+            'place' : 'Сингапур',
+            'coastReg' : '295 500',
+            'apPack' : 'не требуется',
+            'nominalServ' : '17 700',
+            'yearCoast' : '189 000',
+            'answer' : 'V',
+            'hrefMore' : '#'
+        },
+        'item3' : {
+            'place' : 'Гонконг',
+            'coastReg' : '112 000',
+            'apPack' : '26 500',
+            'nominalServ' : '29 500',
+            'yearCoast' : '85 500',
+            'answer' : 'V',
+            'hrefMore' : '#'
+        },
+        'item4' : {
+            'place' : 'Китай',
+            'coastReg' : '975 000',
+            'apPack' : 'не требуется',
+            'nominalServ' : 'не требуется',
+            'yearCoast' : '366 000',
+            'answer' : 'X',
+            'hrefMore' : '#'
+        }
+    }
+
+each object in asiaComp
+    div(data-thumb= object.place)
+        .table__wrap
+            div.table.table__obshor
+                .table__row
+                    .table__ceil.table__heading Юрисдикция
+                    .table__ceil.table__heading-desc.table__heading-name= 'Оффшор ' + object.place
+                .table__row
+                    .table__ceil.table__heading Стоимость регистрации
+                    .table__ceil.table__heading-desc= object.coastReg  + ' руб'
+                .table__row 
+                    .table__ceil.table__heading Апостилированный пакет
+                        .tooltip(data-tooltip="Апостилированный пакет – заверение апостилем пакета документов, необходимых для регистрации в иностранном государстве.") ?
+                    if (object.apPack == "не требуется" )
+                        .table__ceil.table__heading-desc= object.apPack
+                    else
+                        .table__ceil.table__heading-desc= object.apPack + ' руб'
+                .table__row 
+                    .table__ceil.table__heading Номинальный сервис
+                        .tooltip(data-tooltip="Номинальный сервис – услуги номинального директора или акционеров офшорной компании для сохранения конфиденциальности реального владельца.") ?
+                    if (object.nominalServ == "не требуется" )
+                        .table__ceil.table__heading-desc= object.nominalServ
+                    else
+                        .table__ceil.table__heading-desc= object.nominalServ + ' руб'
+                .table__row 
+                    .table__ceil.table__heading Ежегодное продление
+                    .table__ceil.table__heading-desc= object.yearCoast + ' руб'
+                .table__row
+                    .table__ceil.table__heading Отчетность
+                        .tooltip(data-tooltip="Отчетность – годовой отчет и аудит по результатам деятельности.") ?
+                    if (object.answer == "X")
+                        .table__ceil.table__heading-desc.text--no
+                            i(class=`fa fa-remove` aria-hidden="true")
+                    else
+                        .table__ceil.table__heading-desc.text--ok
+                            i(class=`fa fa-check` aria-hidden="true")
+            .btn__wrap
+                .a(href= object.hrefMore).btn.btn__info Подробнее
+            .btn__wrap
+                .a(href="#popup-order").btn.btn-popup-order Получить персональное предожение

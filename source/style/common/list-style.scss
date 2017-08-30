@@ -31,3 +31,13 @@
         }
     }
 }
+
+.list--dot {
+    padding-left: 20px;
+    list-style-type: circle;
+    margin-bottom: 30px;
+
+    li {
+        margin-bottom: 5px;
+    }
+}

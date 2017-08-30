@@ -7,11 +7,21 @@
 .text--white {
     color: $white;
 }
+.text--no,
+.text--ok {
+    font-size: 2.8rem;
+}
+.text--no {
+    color: red;
+}
+
+.text--ok {
+    color: green;
+    animation: zooming 3s ease-in-out infinite running;
+}
 .text--left {
     text-align: left;
 }
 .text--center {
     text-align: center;
 }
-
-// Icon modyfy

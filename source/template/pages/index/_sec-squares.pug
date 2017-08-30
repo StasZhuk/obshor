@@ -18,7 +18,7 @@ section.squares
     ul.squares__list.overlay  
         each coast, elem in squares
             li.squares__item
-                a(href='#').squares__link
+                .squares__link
                     span= elem
                     .square__hov-desc
                         .coast.coast--bg
@@ -27,4 +27,4 @@ section.squares
                             span Регистрация оффшорной компании 
                             span Юридический адрес на год 
                             span печать
-                        .coast__btn Получить персональное предложение
+                        a(href="#popup-order").coast__btn.btn-popup-order Получить персональное предложение

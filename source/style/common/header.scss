@@ -1,6 +1,7 @@
 .header {
     display: flex;
     flex-direction: column;
+    border-bottom: 1px solid $text-grey;
 
     @include desktop() {
         margin-top: 70px;
@@ -11,7 +12,6 @@
         padding: 1rem 2rem;
         font-size: 2rem;
         a {
-            transition: 0.3s color;
             span {
                 transition: 0.3s color;
             }

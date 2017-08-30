@@ -1,0 +1,149 @@
+-
+    var obshorComp = {
+        'item1' : {
+            'place' : 'Сейшелы',
+            'coastReg' : '20 950',
+            'apPack' : '16 800',
+            'nominalServ' : '22 300',
+            'yearCoast' : '26 800',
+            'answer' : 'V',
+            'hrefMore' : 'company-offshor/seychelles.html'
+        },
+        'item2' : {
+            'place' : 'Ирландия LP',
+            'coastReg' : '71 400',
+            'apPack' : 'включено',
+            'nominalServ' : '45 600',
+            'yearCoast' : '59 400',
+            'answer' : 'X',
+            'hrefMore' : '#'
+        },
+        'item3' : {
+            'place' : 'Беилиз',
+            'coastReg' : '20950',
+            'apPack' : '16800',
+            'nominalServ' : '22300',
+            'yearCoast' : '26800',
+            'answer' : 'V',
+            'hrefMore' : '#'
+        },
+        'item4' : {
+            'place' : 'Британские Виргинские о-ва (BVI)',
+            'coastReg' : '20950',
+            'apPack' : '16800',
+            'nominalServ' : '22300',
+            'yearCoast' : '26800',
+            'answer' : 'V',
+            'hrefMore' : '#'
+        },
+        'item5' : {
+            'place' : 'Панама',
+            'coastReg' : '20950',
+            'apPack' : '16800',
+            'nominalServ' : '22300',
+            'yearCoast' : '26800',
+            'answer' : 'V',
+            'hrefMore' : '#'
+        },
+        'item6' : {
+            'place' : 'Кипр',
+            'coastReg' : '20950',
+            'apPack' : '16800',
+            'nominalServ' : '22300',
+            'yearCoast' : '26800',
+            'answer' : 'V',
+            'hrefMore' : '#'
+        },
+        'item7' : {
+            'place' : 'Шотландия',
+            'coastReg' : '20950',
+            'apPack' : '16800',
+            'nominalServ' : '22300',
+            'yearCoast' : '26800',
+            'answer' : 'V',
+            'hrefMore' : '#'
+        },
+        'item8' : {
+            'place' : 'Новая Зеландия',
+            'coastReg' : '20950',
+            'apPack' : '16800',
+            'nominalServ' : '22300',
+            'yearCoast' : '26800',
+            'answer' : 'V',
+            'hrefMore' : '#'
+        },
+        'item9' : {
+            'place' : 'Великобритания LLP',
+            'coastReg' : '20950',
+            'apPack' : '16800',
+            'nominalServ' : '22300',
+            'yearCoast' : '26800',
+            'answer' : 'V',
+            'hrefMore' : '#'
+        },
+        'item10' : {
+            'place' : 'Великобритания LTD',
+            'coastReg' : '20950',
+            'apPack' : '16800',
+            'nominalServ' : '22300',
+            'yearCoast' : '26800',
+            'answer' : 'V',
+            'hrefMore' : '#'
+        },
+        'item11' : {
+            'place' : 'Англия',
+            'coastReg' : '20950',
+            'apPack' : '16800',
+            'nominalServ' : '22300',
+            'yearCoast' : '26800',
+            'answer' : 'V',
+            'hrefMore' : '#'
+        },
+        'item12' : {
+            'place' : 'Гибралтар',
+            'coastReg' : '20950',
+            'apPack' : '16800',
+            'nominalServ' : '22300',
+            'yearCoast' : '26800',
+            'answer' : 'X',
+            'hrefMore' : '#'
+        },
+    }
+
+each object in obshorComp
+    div(data-thumb= object.place)
+        .table__wrap
+            div.table.table__obshor
+                .table__row
+                    .table__ceil.table__heading Юрисдикция
+                    .table__ceil.table__heading-desc.table__heading-name= 'Оффшор ' + object.place
+                .table__row
+                    .table__ceil.table__heading Стоимость регистрации
+                    .table__ceil.table__heading-desc= object.coastReg  + ' руб'
+                .table__row 
+                    .table__ceil.table__heading Апостилированный пакет
+                        .tooltip(data-tooltip="Апостилированный пакет – заверение апостилем пакета документов, необходимых для регистрации в иностранном государстве.") ?
+                    if (object.apPack == "включено" )
+                        .table__ceil.table__heading-desc= object.apPack
+                    else
+                        .table__ceil.table__heading-desc= object.apPack + ' руб'
+                .table__row 
+                    .table__ceil.table__heading Номинальный сервис
+                        .tooltip(data-tooltip="Номинальный сервис – услуги номинального директора или акционеров офшорной компании для сохранения конфиденциальности реального владельца.") ?
+                    .table__ceil.table__heading-desc= object.nominalServ + ' руб'
+                .table__row 
+                    .table__ceil.table__heading Ежегодное продление
+                    .table__ceil.table__heading-desc= object.yearCoast + ' руб'
+                .table__row
+                    .table__ceil.table__heading Отчетность
+                        .tooltip(data-tooltip="Отчетность – годовой отчет и аудит по результатам деятельности.") ?
+                    if (object.answer == "X")
+                        .table__ceil.table__heading-desc.text--no
+                            i(class=`fa fa-remove` aria-hidden="true")
+                    else
+                        .table__ceil.table__heading-desc.text--ok
+                            i(class=`fa fa-check` aria-hidden="true")
+            .btn__wrap
+                a(href= object.hrefMore).btn.btn__info Подробнее
+            .btn__wrap
+                a(href="#popup-order").btn.btn-popup-order Получить персональное предожение

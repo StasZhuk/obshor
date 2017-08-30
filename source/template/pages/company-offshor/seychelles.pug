@@ -1,0 +1,71 @@
+extends ../../_template
+ 
+block variables
+    - var title= 'Регистрация на Сейшельскич островах'
+
+block content
+    section.section.section-heading.section-padding-bottom
+        .container
+            h1.heading__second.text--left Регистрация на Сейшельских островах
+            ul.breadcrumbs 
+                li.breadcrumbs__item
+                    a(href="/index.html").breadcrumbs__link Главная
+                li.breadcrumbs__item
+                     a(href="/pages/company-offshor.html").breadcrumbs__link Оффшорные компании
+                li.breadcrumbs__item
+                    span.breadcrumbs__link Сейшелы
+
+            .slider__pagination
+            .slider__wrap.slider-obshor__wrap
+                .slider-arrow.slider-arrow__next
+                    +icon('slider-arrow')
+                .slider-arrow.slider-arrow__prev
+                    +icon('slider-arrow')
+                div(data-slick='{"slidesToShow": 1, "slidesToScroll": 1}').slider.company-obshor__slider
+                    include ./more-about/_seichelles-tables
+            
+            include ../../common/_popupform
+
+    section.section.section-specials
+        .special__filtered.overlay
+        .specials__wrap
+            h1.special__heading При покупке компании
+                br
+                span.special__text-wow до 31 августа
+            span.special__desc открытие банковского счета 
+            span.special__text-wow бесплатно
+
+    section.section.section-stages
+        .container
+            h2.heading__second 6 простых шагов для покупки компании:
+            ul.list.stages__list
+                li.stages__item
+                    span.stages__item-desc выбрать
+                        br
+                        | страну
+                    i(class=`fa fa-remove` aria-hidden="true").stages__icon
+                li.stages__item
+                    span.stages__item-desc выбрать
+                        br
+                        | страну
+                    i(class=`fa fa-remove` aria-hidden="true").stages__icon
+                li.stages__item
+                    span.stages__item-desc выбрать
+                        br
+                        | страну
+                    i(class=`fa fa-remove` aria-hidden="true").stages__icon
+                li.stages__item
+                    span.stages__item-desc выбрать
+                        br
+                        | страну
+                    i(class=`fa fa-remove` aria-hidden="true").stages__icon
+                li.stages__item
+                    span.stages__item-desc выбрать
+                        br
+                        | страну
+                    i(class=`fa fa-remove` aria-hidden="true").stages__icon
+                li.stages__item
+                    span.stages__item-desc выбрать
+                        br
+                        | страну
+                    i(class=`fa fa-remove` aria-hidden="true").stages__icon

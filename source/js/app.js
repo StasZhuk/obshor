@@ -1,5 +1,5 @@
 $(document).ready(function () {
-
+    console.log('fdgdf');
     (function ($) {
         $(".nav-slimscroll").slimScroll({
             height: '100vh',
@@ -11,6 +11,7 @@ $(document).ready(function () {
         })
     })($);
 
+    // Magnific POPAP Sertificats
     $('.sertificats__gallery').magnificPopup({
         delegate: 'a', // child items selector, by clicking on it popup will open
         type: 'image',
@@ -18,6 +19,19 @@ $(document).ready(function () {
             enabled: true
         }
     });
+
+    // Magnific POPAP FORM Specials
+    $('.btn-popup-order').magnificPopup({
+        type: 'inline',
+        closeBtnInside: true,
+        showCloseBtn: true,
+        // Delay in milliseconds before popup is removed
+        removalDelay: 150,
+  
+        // Class that is added to popup wrapper and background
+        // make it unique to apply your CSS animations just to this exact popup
+        mainClass: 'mfp-fade'
+        });
 
 
     // Menu NAV adaptive
@@ -72,12 +86,21 @@ $(document).ready(function () {
     (function() {
 
         $('.company-obshor__slider').slick({
-            // dots: true,
-            // customPaging : function() {
-            //     return '<a class="index-slider__dots"></a>';
-            // },
             prevArrow: '.slider-arrow__prev',
-            nextArrow: '.slider-arrow__next'
+            nextArrow: '.slider-arrow__next',
+            dots: true,
+            appendDots: '.slider__pagination',
+            customPaging : function(slider, i) {
+                var thumb = $(slider.$slides[i]).data('thumb');
+                return '<span class="slider__item-name"><span class="slider__name-wrap">'+ thumb + '</span></span>';
+            },
+            responsive: [{
+                  breakpoint: 960,
+                  settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                  }
+            }]
         });
         
     })(); 
