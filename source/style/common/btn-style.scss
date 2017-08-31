@@ -48,3 +48,22 @@
     width: 250px;
     margin: 0 auto;
 }
+.btn--offer {
+    padding: 15px 30px; 
+
+    
+    @include phone() {
+        padding: 10px 20px;
+    }
+}
+
+
+.btn--action {
+    display: inline-block;
+    margin: 0 auto;
+    padding: 15px 30px;
+
+    @include phone() {
+        padding: 10px 20px;
+    }
+}

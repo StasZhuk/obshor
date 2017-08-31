@@ -126,6 +126,7 @@ section {
     }
 
     &.section-heading {
+        background-image: url('../img/_sections_bg/groovepaper.png');        
         padding: 20px 0;
         padding-bottom: 0;
 
@@ -133,6 +134,10 @@ section {
             margin-bottom: 15px;
         }
     }
+}
+
+.section.company {
+    background-image: url('../img/_sections_bg/groovepaper.png');    
 }
 
 .section.section-padding-bottom {

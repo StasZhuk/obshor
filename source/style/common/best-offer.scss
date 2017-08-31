@@ -1,0 +1,64 @@
+.section-best-offer {
+    padding-bottom: 70px;
+    background-image: url('../img/_sections_bg/groovepaper.png');
+    .list__item {
+        @include col-4();
+    }
+
+    @include laptop() {
+        .list__item {
+            @include col-6();
+            margin-bottom: 30px;
+        }
+    }
+    @include phone() {
+        .list__item {
+            @include col-12();
+        }
+    }
+}
+.best-offer__wrap {
+    position: relative;
+}
+
+.offer-item {
+    width: 240px;
+    height: 100%;
+    margin: 0 auto;
+    border: 1px solid rgba(grey, 0.2);
+}
+
+.offer-item__img-wrap {
+    width: 100%;
+
+    img {
+        width: 100%;
+        height: 100%;
+        max-height: 135px;        
+    }
+}
+
+.offer-item__desc {
+    padding: 30px 15px;
+    background-color: #fff;
+}
+
+.offer-item__desc-heading {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.offer-item__desc-coast {
+    margin-bottom: 15px;
+}
+
+.offer-item__desc-link {
+    color: $acsent-pink;
+    text-decoration: underline;
+    &:hover {
+        text-decoration: none;
+    }
+}
+

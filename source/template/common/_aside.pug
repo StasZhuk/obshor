@@ -5,8 +5,8 @@
         "Европейские компании" : "/pages/company-europa.html",
         "Азиатские компании" : "/pages/company-asia.html",
         "Компании в США" : "/pages/company-usa.html",
-        "Банковские счета" : "#",
-        "ВНЖ" : "#",
+        "Банковские счета" : "/pages/bank-account.html",
+        "ВНЖ" : "/pages/residence-permit.html",
         "Получение лицензии" : "#"
     }
 
@@ -22,8 +22,7 @@
             ul.nav-main__list
                 each href, title in menu
                     li.nav-main__item
-                        a(href= href).nav-main__link= title
-                        
+                        a(href= href).nav-main__link= title  
                 .contacts-link
                     a(href="mailto:info@prifinance.com").icon-block.header__mail
                         i(class="fa fa-envelope fa--style" aria-hidden="true" )

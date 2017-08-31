@@ -1,0 +1,97 @@
+extends ../../_template
+
+block variables
+    - var title= 'Азиатские компании'
+    -
+        var latviaBank = {
+            'item1' : {
+                'name' : 'IB INVESTICIJUBANKA',
+                'typeAcc' : 'Расчетный',
+                'dateOpen' : '7-14 дней',
+                'coast' : '18 000',
+                'hrefMore' : '#'
+            },
+            'item2' : {
+                'name' : 'AS EXPOBANK',
+                'typeAcc' : 'Расчетный',
+                'dateOpen' : '7-14 дней',
+                'coast' : '18 000',
+                'hrefMore' : '#'
+            },
+            'item3' : {
+                'name' : 'RIETUMU BANKA',
+                'typeAcc' : 'Расчетный',
+                'dateOpen' : '7-14 дней',
+                'coast' : '15 000',
+                'hrefMore' : '#'
+            },
+            'item4' : {
+                'name' : 'ABLV BANK',
+                'typeAcc' : 'Расчетный',
+                'dateOpen' : '7-14 дней',
+                'coast' : '18 000',
+                'hrefMore' : '#'
+            },
+            'item5' : {
+                'name' : 'LATVIJAS PASTA BANKA',
+                'typeAcc' : 'Расчетный',
+                'dateOpen' : '7-14 дней',
+                'coast' : '15 000',
+                'hrefMore' : '#'
+            },
+            'item6' : {
+                'name' : 'NORVIK BANKA',
+                'typeAcc' : 'Расчетный',
+                'dateOpen' : '7-14 дней',
+                'coast' : '18 000',
+                'hrefMore' : '#'
+            },
+            'item7' : {
+                'name' : 'CITADELE BANKA',
+                'typeAcc' : 'Расчетный',
+                'dateOpen' : '7-14 дней',
+                'coast' : '18 000',
+                'hrefMore' : '#'
+            },
+        }
+
+block content
+    section.section.company
+        .container
+            h2.heading__second.text--left Банковские счета Латвии
+            ul.breadcrumbs 
+                li.breadcrumbs__item
+                    a(href="/index.html").breadcrumbs__link Главная
+                li.breadcrumbs__item
+                    a(href="/pages/bank-account.html").breadcrumbs__link Банковские счета
+                li.breadcrumbs__item
+                    span.breadcrumbs__link Банки Латвии
+            .slider__pagination
+            .slider__wrap.slider-obshor__wrap
+                .slider-arrow.slider-arrow__next
+                    +icon('slider-arrow')
+                .slider-arrow.slider-arrow__prev
+                    +icon('slider-arrow')
+                div(data-slick='{"slidesToShow": 1, "slidesToScroll": 1}').slider.company-obshor__slider
+
+                    each object in latviaBank
+                        div(data-thumb= object.name)
+                            .table__wrap
+                                div.table.table__obshor
+                                    .table__row
+                                        .table__ceil.table__heading Название Банка
+                                        .table__ceil.table__heading-desc.table__heading-name= object.name
+                                    .table__row
+                                        .table__ceil.table__heading Тип счета
+                                        .table__ceil.table__heading-desc= object.typeAcc
+                                    .table__row 
+                                        .table__ceil.table__heading Срок открытия
+                                        .table__ceil.table__heading-desc= object.dateOpen
+                                    .table__row 
+                                        .table__ceil.table__heading Стоимость
+                                        .table__ceil.table__heading-desc= object.coast + ' руб'
+                                .btn__wrap
+                                    .a(href= object.hrefMore).btn.btn__info Подробнее
+                                .btn__wrap
+                                    .a(href="#popup-order").btn.btn-popup-order Получить персональное предожение
+        include ../../common/_popupform

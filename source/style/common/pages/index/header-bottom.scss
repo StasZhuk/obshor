@@ -30,16 +30,6 @@
         display: block;
         margin-bottom: 2rem;
     }
-
-    .btn--action {
-        display: inline-block;
-        margin: 0 auto;
-        padding: 15px 60px;
-
-        @include phone() {
-            padding: 10px 20px;
-        }
-    }
 } 
 
 .header__video-wrap {

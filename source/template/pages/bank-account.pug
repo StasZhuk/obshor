@@ -1,0 +1,39 @@
+extends ../_template
+ 
+block variables
+    - var title= 'Банковские счета'
+
+block content
+    section.section.company.bank-account
+        .container
+            h2.heading__second.text--left Регистрация банковских счетов
+            ul.breadcrumbs 
+                li.breadcrumbs__item
+                    a(href="/index.html").breadcrumbs__link Главная
+                li.breadcrumbs__item
+                    span.breadcrumbs__link Банковские счета
+
+            h2.heading__sub Выберите страну:
+
+            ul.list
+                li.list__item
+                    a(href="bank-account/bank-latvia.html").list__link
+                        span.flag.flag-li
+                        span.text__desc Счета в банках 
+                        span.text--country Латвии
+                li.list__item
+                    a(href="#").list__link
+                        span.flag.flag-ca
+                        span.text__desc Счета в банках 
+                        span.text--country Канады
+                li.list__item
+                    a(href="#").list__link
+                        span.flag.flag-sh 
+                        span.text__desc Счета в банках 
+                        span.text--country Швейцарии
+                li.list__item
+                    a(href="#").list__link
+                        span.flag.flag-gk
+                        span.text__desc Счета в банках 
+                        span.text--country Гонконга
+                

@@ -2,8 +2,6 @@
     background: url('../img/_sections_bg/offer_bg.png') no-repeat center;
     background-size: cover;
     padding: 130px 0;
-
-    
     @include phone() {
         .heading__second {
             margin-left: 0;
@@ -14,24 +12,19 @@
             width: 200px;
             margin: 0 auto;
         }
-
         .btn--offer {
             margin: 0 auto;
-            // width: 100%;
         }
     }
-
     .heading__second {
         margin: 0 50px;
         margin-bottom: 50px;
         line-height: 46px;
     }
-
     .list {
         justify-content: center;
         flex-wrap: wrap;
     }
-
     .list__item {
         flex: 1;
         flex-basis: 200px;
@@ -39,17 +32,8 @@
         margin-bottom: 30px;
         @include col-3();
     }
-
-    // select {
-    //     display: block;
-    // }
-
     .btn__wrap {
         margin: 0 auto;
         width: 290px;
-    }
-
-    .btn--offer {
-        padding: 5px 50px 10px; 
     }
 }

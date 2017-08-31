@@ -1,32 +1,57 @@
 .section-stages {
+    background-image: url('../img/_sections_bg/groovepaper.png');    
     li:nth-child(odd) {
-        span {
+        .stages__wrap-desc {
             order: 1;
         }
     }
+}
+
+.stages__list {
+    height: 250px;
 }
 
 .stages__item {
     display: flex;
     max-width: 16%;
     margin: 0;
+    padding: 0 10px;
     width: 100%;
     flex-direction: column;
-    // align-content: center;s
-    text-align: center;
+    border-right: 5px solid $aside-bg;
+
+    &:last-child {
+        border-right: none;
+    }
 }
 
-.stages__icon {
-    height: 120px;
+.stages__wrap-desc {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    justify-content: center;  
+    background-color: $aside-bg;
+    font-size: 1.4rem;
+    color: $white;
+}
+
+.stages__number {
     font-size: 6rem;
-    padding: 10px;
-    line-height: 90px;
 }
 
 .stages__item-desc {
-    height: 120px;
-    background-color: $aside-bg;
-    padding: 40px 10px;
-    color: $white;
-    text-transform: uppercase;
+    // text-transform: uppercase;    
+}
+
+.stages__wrap-icon {
+    flex: 1;
+    display: flex;
+}
+
+.stages__icon {
+    margin: auto;
+    font-size: 6rem;
+    text-align: center;
+    color: $aside-bg;
 }

@@ -11,7 +11,7 @@
         left: 0;
         right: 0;
         filter: blur(3px);
-        background: url('../img/_sections_bg/specials-1.jpg') no-repeat center;
+        background: url('../img/_sections_bg/specials-2.jpg') no-repeat center;
         background-size: cover;
         
         transition: 1s filter;
@@ -37,10 +37,6 @@
         font-size: 2.8rem;
         color: darken($acsent-pink, 10%);
     }
-}
-
-.special__filtered {
-
 }
 
 .specials__wrap {
