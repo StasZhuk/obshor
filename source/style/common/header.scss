@@ -70,7 +70,10 @@
             height: auto;
         }
     }
-
+    .btn__wrap {
+        display: flex;
+        padding: 10px 0;
+    }
 
     .icon-block:hover span {
         color: $link-hov;

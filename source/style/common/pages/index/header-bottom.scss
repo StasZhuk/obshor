@@ -11,6 +11,14 @@
     }
     @include phone() {
         padding: 30px 0;
+        .btn__wrap {
+            margin-left: 0;
+            max-width: unset;
+        }
+        .btn--action {
+            width: 100%;
+        }
+
     }
 }
 

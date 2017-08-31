@@ -47,6 +47,10 @@
     display: block;
     width: 250px;
     margin: 0 auto;
+
+    @include phone() {
+        max-width: 200px;
+    }
 }
 .btn--offer {
     padding: 15px 30px; 
@@ -62,8 +66,10 @@
     display: inline-block;
     margin: 0 auto;
     padding: 15px 30px;
+    max-width: 200px;
 
     @include phone() {
         padding: 10px 20px;
+        width: 100%;
     }
 }
