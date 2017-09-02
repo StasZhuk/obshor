@@ -1,5 +1,4 @@
 $(document).ready(function () {
-    console.log('fdgdf');
     (function ($) {
         $(".nav-slimscroll").slimScroll({
             height: '100vh',
@@ -10,6 +9,14 @@ $(document).ready(function () {
             color: '#000'
         })
     })($);
+
+    // nav sub-list
+
+    $('.nav-main__sub-link').on('click', function(e) {
+        e.preventDefault();
+        $('.nav-main__sub-list').slideToggle();
+        $('.nav-main__item-sub').toggleClass('active');
+    });
 
     // Magnific POPAP Sertificats
     $('.sertificats__gallery').magnificPopup({
@@ -101,6 +108,21 @@ $(document).ready(function () {
                     slidesToScroll: 1,
                   }
             }]
+        });
+        
+    })(); 
+
+    // SLICK CAROUSEL INDEX PAGE
+    (function() {
+
+        $('.index-slider').slick({
+            // prevArrow: '.slider-arrow__prev',
+            // nextArrow: '.slider-arrow__next',
+            dots: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: true,
+            arrows: false
         });
         
     })(); 

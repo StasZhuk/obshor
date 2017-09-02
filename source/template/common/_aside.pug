@@ -21,9 +21,23 @@
         .nav-slimscroll
             ul.nav-main__list
                 each href, title in menu
-                    li.nav-main__item
-                        a(href= href).nav-main__link= title  
-                .contacts-link
-                    a(href="mailto:info@prifinance.com").icon-block.header__mail
-                        i(class="fa fa-envelope fa--style" aria-hidden="true" )
-                        span info@cks35.ru
+                    if (title == "Получение лицензии")
+                        li.nav-main__item.nav-main__item-sub
+                            i(class=`fa fa-sort-desc` aria-hidden="true").nav-main__icon-list
+                            a(href= href).nav-main__link.nav-main__sub-link= title 
+                            ul.nav-main__sub-list
+                                li.nav-main__item
+                                    a(href="/pages/forex.html").nav-main__link Форекс
+                                li.nav-main__item
+                                    a(href="/pages/casino.html").nav-main__link Онлайн казино  
+                                li.nav-main__item
+                                    a(href="/pages/investion.html").nav-main__link Инвестиционная лицензия
+                                li.nav-main__item
+                                    a(href="/pages/pay-sistem.html").nav-main__link Платежные системы
+                    else
+                        li.nav-main__item
+                            a(href= href).nav-main__link= title   
+            .contacts-link
+                a(href="mailto:info@prifinance.com").icon-block.header__mail
+                    i(class="fa fa-envelope fa--style" aria-hidden="true" )
+                    span info@cks35.ru
